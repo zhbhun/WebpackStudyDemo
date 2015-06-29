@@ -100,10 +100,13 @@
 
 	var a = __webpack_require__(/*! a */ 1);
 	var b = __webpack_require__(/*! b */ 2);
-	__webpack_require__.e/* nsure */(1, function(require) {
-	    __webpack_require__(/*! b */ 2).xyz();
-	    var d = __webpack_require__(/*! d */ 4);
-	});
+	function t() {
+	    __webpack_require__.e/* nsure */(1, function(require) {
+	        __webpack_require__(/*! b */ 2).xyz();
+	        var d = __webpack_require__(/*! d */ 4);
+	    });
+	}
+	setTimeout(t, 3000);
 
 /***/ },
 /* 1 */
