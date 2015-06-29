@@ -1,0 +1,8 @@
+{
+  "name": "multiple-entry-points",
+  "version": "1.0.0",
+  "devDependencies": {
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.10.0"
+  }
+}
