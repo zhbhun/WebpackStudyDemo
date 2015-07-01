@@ -1,0 +1,12 @@
+{
+  "name": "code-splitted-css-bundle",
+  "version": "1.0.0",
+  "devDependencies": {
+    "css-loader": "^0.15.1",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "node-libs-browser": "^0.5.2",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.10.0"
+  }
+}
