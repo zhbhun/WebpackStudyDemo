@@ -1,0 +1,13 @@
+    {
+  "name": "getting-started",
+  "version": "1.0.0",
+  "scripts": {
+    "dev1": "webpack-dev-server --config webpack.config.default.js",
+    "dev2": "webpack-dev-server --config webpack.config.webapp.js"
+  },
+  "devDependencies": {
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.10.1",
+    "webpack-dev-server": "^1.10.1"
+  }
+}
