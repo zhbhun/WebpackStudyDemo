@@ -2,7 +2,8 @@
   "name": "dev-server-hot",
   "version": "1.0.0",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.config.js"
+    "byo": "webpack-dev-server --config webpack.config.byo.js --content-base byo",
+    "cli-hot": "webpack-dev-server --config webpack.config.cli-hot.js --hot --content-base cli-hot"
   },
   "devDependencies": {
     "node-libs-browser": "^0.5.2",

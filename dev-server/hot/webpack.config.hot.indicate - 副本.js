@@ -1,11 +1,9 @@
 var webpack = require('webpack');
+var path = require("path");
 module.exports = {
-    entry: [
-        "webpack/hot/dev-server",
-        "./entry.js"
-    ],
+    entry: "./entry.js",
     output: {
-        path: __dirname,
+        path: path.join(__dirname, "hot-indicate",
         filename: "bundle.js"
     },
     devServer: {

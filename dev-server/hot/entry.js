@@ -1,1 +1,1 @@
-document.write('hot1 mode');
+document.write(require('./content.js'));
