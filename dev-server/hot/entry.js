@@ -1,0 +1,1 @@
+document.write('hot1 mode');
