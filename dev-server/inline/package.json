@@ -1,0 +1,14 @@
+    {
+  "name": "dev-server-inline",
+  "version": "1.0.0",
+  "scripts": {
+    "dev1": "webpack-dev-server --config webpack.config.inline.default.js",
+    "dev2": "webpack-dev-server --config webpack.config.inline.false.js",
+    "dev3": "webpack-dev-server --config webpack.config.inline.true.js"
+  },
+  "devDependencies": {
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.10.1",
+    "webpack-dev-server": "^1.10.1"
+  }
+}
