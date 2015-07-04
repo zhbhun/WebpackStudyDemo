@@ -1,0 +1,12 @@
+{
+  "name": "run-option-mode-cli",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "webpack-dev-server --content-base build"
+  },
+  "devDependencies": {
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.10.1",
+    "webpack-dev-server": "^1.10.1"
+  }
+}

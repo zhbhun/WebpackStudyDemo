@@ -1,0 +1,1 @@
+document.write('run-option-mode-cli');
