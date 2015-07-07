@@ -24,4 +24,4 @@ echarts支持好几种方式引入项目：
 - 模块化包引入：如果项目本身是模块话的且遵循AMD规范，则只需要使用一个符合AMD规范的模块加载器，如RequireJS，配置好package路径指向src即可。由于echarts依赖底层zrendar，也需要配置好相应的package。
 
 # 操作
-echarts既然支持模块化包引入，符合AMD规范，那么我们稍加配置下webpack，便可以引入到webpack构建的项目中了，具体参考实例[webpack-echarts](https://github.com/zhbhun/WebpackStudyDemo/echarts)
+echarts既然支持模块化包引入，符合AMD规范，那么我们稍加配置下webpack，便可以引入到webpack构建的项目中了，具体参考实例[webpack-echarts](https://github.com/zhbhun/WebpackStudyDemo/tree/master/echarts)
