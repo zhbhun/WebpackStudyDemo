@@ -1,0 +1,7 @@
+{
+  "name": "resolver-alias",
+  "version": "1.0.0",
+  "devDependencies": {
+    "jquery": "^2.1.4"
+  }
+}
