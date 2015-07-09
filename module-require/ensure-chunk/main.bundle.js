@@ -73,7 +73,7 @@
 /******/ 			script.charset = 'utf-8';
 /******/ 			script.async = true;
 /******/
-/******/ 			script.src = __webpack_require__.p + "" + chunkId + ".chunk.js";
+/******/ 			script.src = __webpack_require__.p + "" + ({"1":"common"}[chunkId]||chunkId) + ".chunk.js";
 /******/ 			head.appendChild(script);
 /******/ 		}
 /******/ 	};
@@ -93,16 +93,22 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/*!************************!*\
-  !*** ./example.amd.js ***!
-  \************************/
+/*!********************************!*\
+  !*** ./example.ensur.chunk.js ***!
+  \********************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__.e/* require */(1, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! ./module1 */ 1)]; (function(module1) {
-	    console.log("---");
-	    var module2 = __webpack_require__(/*! ./module2 */ 2);
-	    console.log("***");
-	}.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));});
+	__webpack_require__.e/* nsure */(1/*! common */, function(require) {
+	    console.log("aaa");
+	    __webpack_require__(/*! ./module1 */ 1);
+	    console.log("bbb");
+	});
+	
+	__webpack_require__.e/* nsure */(1/*! common */, function(require) {
+	    console.log("ccc");
+	    __webpack_require__(/*! ./module2 */ 2);
+	    console.log("ddd");
+	});
 
 /***/ }
 /******/ ]);
