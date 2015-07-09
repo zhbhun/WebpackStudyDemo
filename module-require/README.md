@@ -21,6 +21,7 @@
 ## require-amd
 ### 源代码
 - webpack.config.amd.js
+
     ``` javascript
     var path = require("path");
     module.exports = {
@@ -32,7 +33,9 @@
         }
     };
     ```
+
 - example.amd.js
+
     ``` javascript
     require(["./module1"], function(module1) {
         console.log("aaa");
@@ -40,12 +43,16 @@
         console.log("bbb");
     });
     ```
+
 - module1.js
+
     ``` javascript
     console.log("module1");
     module.exports = 1;
     ```
+
 - module2.js
+
     ``` javascript
     console.log("module2");
     module.exports = 2;    
@@ -70,6 +77,7 @@ bbb
 
 ## require-ensure
 - webpack.config.ensure.js
+
     ``` javascrip
     var path = require("path");
     module.exports = {
@@ -81,7 +89,9 @@ bbb
         }
     };
     ```
+
 - example.ensure.js
+
     ``` javascript
     require.ensure(["./module1"], function(require) {
         console.log("aaa");
@@ -90,6 +100,7 @@ bbb
         require("./module1");
     }, 'test');
     ```
+
 - module1.js
 同上
 - module2.js
@@ -114,6 +125,7 @@ module1
 
 ## require-ensure-chunk
 - webpack.config.ensure.chunk.js
+
     ``` javascrip
     var path = require("path");
     module.exports = {
@@ -125,7 +137,9 @@ module1
         }
     };
     ```
+
 - example.ensur.chunk.js
+
     ``` javascript
     require.ensure(["./module1"], function(require) {
         console.log("aaa");
@@ -139,6 +153,7 @@ module1
         console.log("ddd");
     }, 'common');
     ```
+
 - module1.js
 同上
 - module2.js
@@ -161,3 +176,4 @@ bbb
 ccc
 1module2
 ddd
+```
