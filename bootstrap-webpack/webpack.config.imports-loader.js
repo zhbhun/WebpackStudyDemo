@@ -9,12 +9,12 @@ module.exports = {
         "./entry.js"
     ],
     output: {
-        path: path.join(__dirname, "extratext-imports"),
+        path: path.join(__dirname, "imports-loader"),
         filename: "bundle.js"
     },
     module: {
         loaders: [
-            {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")/*loaders: ["style-loader", "css-loader"]*/},
+            {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
             { test: /\.png$/, loader: "file-loader" },
             { test: /\.eot$/, loader: "file-loader" },
             { test: /\.svg$/, loader: "file-loader" },
