@@ -34,6 +34,6 @@
 - [react-transform-boilerplate](https://github.com/zhbhun/WebpackStudyDemo/tree/master/react-transform-boilerplate): React 组件可热加载的项目模板
 
 ## 译文
-- *[基于 Webpack 使用 React](https://github.com/zhbhun/WebpackStudyDemo/tree/master/translation/using-react-with-webpack-tutorial)*
+- *[基于 Webpack 使用 React](https://github.com/zhbhun/WebpackStudyDemo/blob/master/translation/using-react-with-webpack-tutorial.md)*
 
 # 资源索引
