@@ -1,0 +1,40 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'H:\\nodejs\\node.exe',
+1 verbose cli   'H:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'build' ]
+2 info using npm@2.14.3
+3 info using node@v4.1.0
+4 verbose run-script [ 'prebuild', 'build', 'postbuild' ]
+5 info prebuild react-transform-boilerplate@1.0.0
+6 info build react-transform-boilerplate@1.0.0
+7 verbose unsafe-perm in lifecycle true
+8 info react-transform-boilerplate@1.0.0 Failed to exec build script
+9 verbose stack Error: react-transform-boilerplate@1.0.0 build: `npm run clean && npm run build:webpack`
+9 verbose stack Exit status 1
+9 verbose stack     at EventEmitter.<anonymous> (H:\nodejs\node_modules\npm\lib\utils\lifecycle.js:214:16)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at EventEmitter.emit (events.js:172:7)
+9 verbose stack     at ChildProcess.<anonymous> (H:\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at ChildProcess.emit (events.js:172:7)
+9 verbose stack     at maybeClose (internal/child_process.js:817:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+10 verbose pkgid react-transform-boilerplate@1.0.0
+11 verbose cwd D:\Project\Javascript\Webpack\WebpackStudyDemo\react-transform-boilerplate
+12 error Windows_NT 6.1.7601
+13 error argv "H:\\nodejs\\node.exe" "H:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "build"
+14 error node v4.1.0
+15 error npm  v2.14.3
+16 error code ELIFECYCLE
+17 error react-transform-boilerplate@1.0.0 build: `npm run clean && npm run build:webpack`
+17 error Exit status 1
+18 error Failed at the react-transform-boilerplate@1.0.0 build script 'npm run clean && npm run build:webpack'.
+18 error This is most likely a problem with the react-transform-boilerplate package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     npm run clean && npm run build:webpack
+18 error You can get their info via:
+18 error     npm owner ls react-transform-boilerplate
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]

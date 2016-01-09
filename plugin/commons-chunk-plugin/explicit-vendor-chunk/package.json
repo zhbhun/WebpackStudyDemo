@@ -1,0 +1,21 @@
+{
+  "name": "explicit-vendor-chunk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "webpack --config webpack.config.js",
+    "test1": "webpack --config webpack.config.1.js",
+    "test2": "webpack --config webpack.config.2.js",
+    "test3": "webpack --config webpack.config.3.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.12.9"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "react": "^0.14.3"
+  }
+}
