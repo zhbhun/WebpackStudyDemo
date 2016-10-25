@@ -1,4 +1,4 @@
-react-transform-boilerplate-babel5 是基于 babel@5.x.x 和 react@0.14.x 搭建的开发环境，具有以下特性。
+react-transform-boilerplate-babel5 是基于 babel@5.x.x，面向 react@0.14.x 搭建的开发环境，具有以下特性。
 
 - 开启热加载
 - 捕获 `render()` 内部错误，并在浏览器中直接显示错误日志
@@ -71,4 +71,6 @@ react-transform-boilerplate-babel5 是基于 babel@5.x.x 和 react@0.14.x 搭建
 
   redbox-react 版本过高，请使用 redbox-react@1.1.1 以下版本
 
-2. ...
+2. 是否支持 react@15.x.x？
+
+  该环境是基于 babel5 搭建的，而 babel5 目前只支持到 react0.14.x（根据两者的开发日志得出），所以不支持 react@15.x.x
