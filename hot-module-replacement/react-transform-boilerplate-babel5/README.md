@@ -74,9 +74,9 @@ react-transform-boilerplate-babel5 是通过 babel 插件 babel-plugin-react-tra
 
   该环境是基于 babel5 搭建的，而 babel5 目前只支持到 react0.14.x（根据两者的开发日志得出），所以不支持 react@15.x.x
 
-3. 热加载原理？
+3. 热加载原理，为什么这个方案被废弃了？
 
-  通过在客户端和服务端添加中间件 webpack-hot-middleware 实现，具体实现原理可查看 [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) 源码。
+  通过 babel-plugin-react-transform 和 react-transform-hmr 扩展 babel，并在客户端和服务端添加中间件 webpack-hot-middleware 来实现热加载，具体实现原理可查看 [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) 源码。该方案属于实验性质的，还不够完善，目前 babel-plugin-react-transform 已经被废弃，具体参考 [RFC: remove React Transform from examples](https://github.com/reactjs/redux/pull/1455)
 
 4. HTML 不在 webpack 开发服务器上时，需要根据 webpack 开发服务器的地址和端口来获取脚本，但遇到热加载不能正确执行的问题？
 
