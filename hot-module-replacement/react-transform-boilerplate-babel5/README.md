@@ -5,15 +5,14 @@ react-transform-boilerplate-babel5 是基于 babel@5.x.x，面向 react@0.14.x �
 - 高亮组件更新，可查看状态更新历史
 - render an inline prop inspector
 
-# 实现原理
-通过 babel 插件 babel-plugin-react-transform 配置扩展来实现各个特性。
+# 安装配置
+react-transform-boilerplate-babel5 是通过 babel 插件 babel-plugin-react-transform 配置扩展来实现各个特性。
 
 - react-transform-hmr：实现热加载
 - react-transform-catch-errors + redbox-react：实现错误日志打印
 - react-transform-render-visualizer：实现组件更新高亮
 - react-transform-debug-inspector：。。。
 
-# 安装配置
 ## 依赖配置
 - react@~0.14.8
 - react-dom@~0.14.8
@@ -74,3 +73,14 @@ react-transform-boilerplate-babel5 是基于 babel@5.x.x，面向 react@0.14.x �
 2. 是否支持 react@15.x.x？
 
   该环境是基于 babel5 搭建的，而 babel5 目前只支持到 react0.14.x（根据两者的开发日志得出），所以不支持 react@15.x.x
+
+3. 热加载原理？
+
+  通过在客户端和服务端添加中间件 webpack-hot-middleware 实现，具体实现原理可查看 [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) 源码。
+
+4. HTML 不在 webpack 开发服务器上时，需要根据 webpack 开发服务器的地址和端口来获取脚本，但遇到热加载不能正确执行的问题？
+
+  需要配置 webpack.config.js -> entry['webpack-hot-middleware/client'] 的查询参数 path，具体文档可查看  [webpack-hot-middleware config](https://github.com/glenjamin/webpack-hot-middleware#config)
+
+# 参考文献
+- [react-transform-boilerplate](https://github.com/gaearon/react-transform-boilerplate/tree/gaearon-patch-1)
