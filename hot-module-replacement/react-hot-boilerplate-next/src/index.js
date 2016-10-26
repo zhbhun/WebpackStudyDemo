@@ -1,34 +1,26 @@
-import { AppContainer } from 'react-hot-loader';
+import 'todomvc-app-css/index.css';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import { render } from 'react-dom';
 
+import configureStore from './store/configureStore';
+import Root from './containers/Root';
+
+const store = configureStore();
 const rootEl = document.getElementById('root');
+
 try {
-  ReactDOM.render(
-    <AppContainer>
-      <App />
-    </AppContainer>,
-    rootEl
-  );
+  render(<Root store={store} />, rootEl);
 } catch (e) {
   console.error(e.stack);
 }
 
 if (module.hot) {
-  module.hot.accept('./App', () => {
-    // If you use Webpack 2 in ES modules mode, you can
-    // use <App /> here rather than require() a <NextApp />.
-    const NextApp = require('./App').default;
+  module.hot.accept('./containers/Root', () => {
     try {
-      ReactDOM.render(
-        <AppContainer>
-           <NextApp />
-        </AppContainer>,
-        rootEl
-      );
+      const NextRoot = require('./containers/Root').default;
+      render(<NextRoot store={store} />, rootEl);
     } catch (e) {
       console.error(e.stack);
     }
-  });
+  })
 }
