@@ -76,11 +76,14 @@ react-transform-boilerplate-babel5 是通过 babel 插件 babel-plugin-react-tra
 
 3. 热加载原理，为什么这个方案被废弃了？
 
-  通过 babel-plugin-react-transform 和 react-transform-hmr 扩展 babel，并在客户端和服务端添加中间件 webpack-hot-middleware 来实现热加载，具体实现原理可查看 [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware) 源码。该方案属于实验性质的，还不够完善，目前 babel-plugin-react-transform 已经被废弃，具体参考 [RFC: remove React Transform from examples](https://github.com/reactjs/redux/pull/1455)
+  通过 babel-plugin-react-transform 和 react-transform-hmr 扩展 babel，并在客户端和服务端添加中间件 webpack-hot-middleware 来实现热加载。该方案属于实验性质的，还不够完善，目前 babel-plugin-react-transform 已经被废弃，具体参考 [RFC: remove React Transform from examples](https://github.com/reactjs/redux/pull/1455)。
 
 4. HTML 不在 webpack 开发服务器上时，需要根据 webpack 开发服务器的地址和端口来获取脚本，但遇到热加载不能正确执行的问题？
 
   需要配置 webpack.config.js -> entry['webpack-hot-middleware/client'] 的查询参数 path，具体文档可查看  [webpack-hot-middleware config](https://github.com/glenjamin/webpack-hot-middleware#config)
+
+# 实际运用
+babel5 只支持到 react0.14.x，需要支持最新版本的 react，请使用开发模板 [react-transform-boilerplate-babel6](../react-transform-boilerplate-babel6)。另外，babel6 做了大量重构，利用 preset 可以简化开发环境配置。
 
 # 参考文献
 - [react-transform-boilerplate](https://github.com/gaearon/react-transform-boilerplate/tree/gaearon-patch-1)
