@@ -1,4 +1,4 @@
-react-hot-boilerplate-patch-jsx 是基于 jsx-loader，面向 react@0.13.x 搭建的开发环境，可以实现热加载，保证组件状态不变地实时刷新。
+react-hot-boilerplate-jsx-loader 是基于 jsx-loader，面向 react@0.13.x 搭建的开发环境，可以实现热加载，保证组件状态不变地实时刷新。
 
 # 安装配置
 ## 依赖配置
