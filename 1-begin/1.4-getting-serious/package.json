@@ -1,0 +1,21 @@
+{
+  "name": "1.4-getting-serious",
+  "version": "1.0.0",
+  "description": "Webpack 非常灵活，提供了许多高级的特性，但不是所有特性都可以通过 webpack 命令选项开启，而是通过配置文件来控制。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.18.0",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "webpack": "^1.13.3"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.16.0",
+    "jquery": "^3.1.1"
+  }
+}
