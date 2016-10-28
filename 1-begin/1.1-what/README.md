@@ -1,6 +1,6 @@
 webpack 是一个模块打包器，处理带有依赖关系的模块，生成一系列代表这些模块的静态资源。
 
-[what-is-webpack.png](http://webpack.github.io/assets/what-is-webpack.png)
+![what-is-webpack.png](http://webpack.github.io/assets/what-is-webpack.png)
 
 - 每个静态资源都是一个模块
 
