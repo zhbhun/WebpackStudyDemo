@@ -27,7 +27,6 @@
 - Babel：涉及 ES 方面的知识，只要知道如何配置就行了。
 - ES6（ES 即 ECMAScript）：ES6 是 ES5 的下一个版本，可以参考教程 [ECMAScript 6入门](http://es6.ruanyifeng.com/)
 
+更多入门可参考教程
 
-- http://webpack.github.io/docs/cli.html
-- http://webpack.github.io/docs/node.js-api.html
-- http://webpack.github.io/docs/configuration.html
+- [Webpack Getting Started](http://webpack.github.io/docs/tutorials/getting-started/)
