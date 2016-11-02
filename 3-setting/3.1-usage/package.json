@@ -1,0 +1,17 @@
+{
+  "name": "webpack-usage",
+  "version": "0.1.0",
+  "description": "- `webpack --help`：webpack 命令用法 - [CLI](http://webpack.github.io/docs/cli.html)：webpack 命令行文档 - [NODE.JS API](http://webpack.github.io/docs/node.js-api.html)：webpack api 文档",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
