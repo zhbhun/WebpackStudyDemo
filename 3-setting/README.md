@@ -1,15 +1,23 @@
 # 两种用法
-- CLI：`webpack --config webpack.config.js`
+要知道两种用法的应用场景，并且尽量使用配置文件来实现项目打包。
+
+- CLI（命令行界面）：`webpack --config webpack.config.js`
 - Node.js API：`webpack({/* configuration */}, callback)`
 
 # 配置详解
-[CONFIGURATION](http://webpack.github.io/docs/configuration.html)
+参考官方文档 [CONFIGURATION](http://webpack.github.io/docs/configuration.html)
 
-## context
+- context
+  
+  要知道 context 用来做什么的，什么情况下需要配置该属性。
 
-## entry
-- 单入口
-- 多入口
+- entry
+
+  根据自己的项目类型来配置，单页应用程序就配置字符串或数组，否则配置为对象。
+
+- output
+
+  TODO
 
 ## output
 - 打包文件输出路径
