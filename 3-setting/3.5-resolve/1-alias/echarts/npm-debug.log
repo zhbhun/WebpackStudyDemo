@@ -1,0 +1,116 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/zhanghuabin/.nvm/versions/node/v6.9.0/bin/node',
+1 verbose cli   '/home/zhanghuabin/.nvm/versions/node/v6.9.0/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   '--save',
+1 verbose cli   'echarts@2.2.7' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData echarts@2.2.7
+8 silly fetchNamedPackageData echarts
+9 silly mapToRegistry name echarts
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npm.taobao.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'echarts',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'echarts',
+12 silly mapToRegistry   name: 'echarts',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npm.taobao.org/echarts
+14 verbose request uri https://registry.npm.taobao.org/echarts
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 12:24:45
+17 verbose request id b116435764738c9d
+18 verbose etag "b3f2-+PX6anRKCdc9uH0U+/S/UQ"
+19 http request GET https://registry.npm.taobao.org/echarts
+20 http 304 https://registry.npm.taobao.org/echarts
+21 verbose headers { date: 'Sat, 05 Nov 2016 04:24:49 GMT',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-current-requests': '1',
+21 verbose headers   etag: '"b3f2-+PX6anRKCdc9uH0U+/S/UQ"',
+21 verbose headers   'x-readtime': '61' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Sat, 05 Nov 2016 04:24:49 GMT',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-current-requests': '1',
+22 silly get     etag: '"b3f2-+PX6anRKCdc9uH0U+/S/UQ"',
+22 silly get     'x-readtime': '61' } ]
+23 verbose etag https://registry.npm.taobao.org/echarts from cache
+24 verbose get saving echarts to /home/zhanghuabin/.npm/registry.npm.taobao.org/echarts/.cache.json
+25 verbose correctMkdir /home/zhanghuabin/.npm correctMkdir not in flight; initializing
+26 silly fetchNamedPackageData No valid target from cache, forcing network
+27 verbose request uri https://registry.npm.taobao.org/echarts
+28 verbose request no auth needed
+29 info attempt registry request try #1 at 12:24:49
+30 http request GET https://registry.npm.taobao.org/echarts
+31 http 200 https://registry.npm.taobao.org/echarts
+32 verbose headers { date: 'Sat, 05 Nov 2016 04:24:51 GMT',
+32 verbose headers   'content-type': 'application/json; charset=utf-8',
+32 verbose headers   'content-length': '46066',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-current-requests': '1',
+32 verbose headers   etag: '"b3f2-+PX6anRKCdc9uH0U+/S/UQ"',
+32 verbose headers   'x-readtime': '26' }
+33 silly get cb [ 200,
+33 silly get   { date: 'Sat, 05 Nov 2016 04:24:51 GMT',
+33 silly get     'content-type': 'application/json; charset=utf-8',
+33 silly get     'content-length': '46066',
+33 silly get     connection: 'keep-alive',
+33 silly get     'x-current-requests': '1',
+33 silly get     etag: '"b3f2-+PX6anRKCdc9uH0U+/S/UQ"',
+33 silly get     'x-readtime': '26' } ]
+34 verbose get saving echarts to /home/zhanghuabin/.npm/registry.npm.taobao.org/echarts/.cache.json
+35 verbose correctMkdir /home/zhanghuabin/.npm correctMkdir not in flight; initializing
+36 silly fetchPackageMetaData Error: No compatible version found: echarts@2.2.7
+36 silly fetchPackageMetaData Valid install targets:
+36 silly fetchPackageMetaData 3.3.1, 3.3.0, 3.2.3, 3.2.2, 3.2.1, 3.2.0, 3.1.10, 3.1.9, 3.1.8, 3.1.7, 3.1.6, 3.1.5, 3.1.4, 3.1.3, 3.1.2, 3.1.1, 3.0.2-beta3, 3.0.2-beta2, 3.0.2-beta1, 3.0.1, 3.0.0, 3.0.0-beta4, 3.0.0-beta3, 3.0.0-beta2, 3.0.0-beta1, 2.2.8, 2.2.7-beta7, 2.2.7-amd-beta2, 2.2.7-amd-beta1, 2.2.1-amd-beta1
+36 silly fetchPackageMetaData
+36 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/home/zhanghuabin/.nvm/versions/node/v6.9.0/lib/node_modules/npm/lib/fetch-package-metadata.js:178:16)
+36 silly fetchPackageMetaData     at /home/zhanghuabin/.nvm/versions/node/v6.9.0/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+36 silly fetchPackageMetaData     at /home/zhanghuabin/.nvm/versions/node/v6.9.0/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+36 silly fetchPackageMetaData     at saved (/home/zhanghuabin/.nvm/versions/node/v6.9.0/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+36 silly fetchPackageMetaData     at /home/zhanghuabin/.nvm/versions/node/v6.9.0/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:233:18
+36 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15)
+36 silly fetchPackageMetaData  error for echarts@2.2.7 { Error: No compatible version found: echarts@2.2.7
+36 silly fetchPackageMetaData Valid install targets:
+36 silly fetchPackageMetaData 3.3.1, 3.3.0, 3.2.3, 3.2.2, 3.2.1, 3.2.0, 3.1.10, 3.1.9, 3.1.8, 3.1.7, 3.1.6, 3.1.5, 3.1.4, 3.1.3, 3.1.2, 3.1.1, 3.0.2-beta3, 3.0.2-beta2, 3.0.2-beta1, 3.0.1, 3.0.0, 3.0.0-beta4, 3.0.0-beta3, 3.0.0-beta2, 3.0.0-beta1, 2.2.8, 2.2.7-beta7, 2.2.7-amd-beta2, 2.2.7-amd-beta1, 2.2.1-amd-beta1
+36 silly fetchPackageMetaData
+36 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/home/zhanghuabin/.nvm/versions/node/v6.9.0/lib/node_modules/npm/lib/fetch-package-metadata.js:178:16)
+36 silly fetchPackageMetaData     at /home/zhanghuabin/.nvm/versions/node/v6.9.0/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+36 silly fetchPackageMetaData     at /home/zhanghuabin/.nvm/versions/node/v6.9.0/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+36 silly fetchPackageMetaData     at saved (/home/zhanghuabin/.nvm/versions/node/v6.9.0/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+36 silly fetchPackageMetaData     at /home/zhanghuabin/.nvm/versions/node/v6.9.0/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:233:18
+36 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15) code: 'ETARGET' }
+37 silly rollbackFailedOptional Starting
+38 silly rollbackFailedOptional Finishing
+39 silly runTopLevelLifecycles Finishing
+40 silly install printInstalled
+41 verbose stack Error: No compatible version found: echarts@2.2.7
+41 verbose stack Valid install targets:
+41 verbose stack 3.3.1, 3.3.0, 3.2.3, 3.2.2, 3.2.1, 3.2.0, 3.1.10, 3.1.9, 3.1.8, 3.1.7, 3.1.6, 3.1.5, 3.1.4, 3.1.3, 3.1.2, 3.1.1, 3.0.2-beta3, 3.0.2-beta2, 3.0.2-beta1, 3.0.1, 3.0.0, 3.0.0-beta4, 3.0.0-beta3, 3.0.0-beta2, 3.0.0-beta1, 2.2.8, 2.2.7-beta7, 2.2.7-amd-beta2, 2.2.7-amd-beta1, 2.2.1-amd-beta1
+41 verbose stack
+41 verbose stack     at pickVersionFromRegistryDocument (/home/zhanghuabin/.nvm/versions/node/v6.9.0/lib/node_modules/npm/lib/fetch-package-metadata.js:178:16)
+41 verbose stack     at /home/zhanghuabin/.nvm/versions/node/v6.9.0/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+41 verbose stack     at /home/zhanghuabin/.nvm/versions/node/v6.9.0/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+41 verbose stack     at saved (/home/zhanghuabin/.nvm/versions/node/v6.9.0/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+41 verbose stack     at /home/zhanghuabin/.nvm/versions/node/v6.9.0/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:233:18
+41 verbose stack     at FSReqWrap.oncomplete (fs.js:123:15)
+42 verbose cwd /home/zhanghuabin/work/project/WebpackStudyDemo/3-setting/3.5-resolve/1-resolve/echarts
+43 error Linux 4.4.0-21-generic
+44 error argv "/home/zhanghuabin/.nvm/versions/node/v6.9.0/bin/node" "/home/zhanghuabin/.nvm/versions/node/v6.9.0/bin/npm" "i" "--save" "echarts@2.2.7"
+45 error node v6.9.0
+46 error npm  v3.10.8
+47 error code ETARGET
+48 error notarget No compatible version found: echarts@2.2.7
+48 error notarget Valid install targets:
+48 error notarget 3.3.1, 3.3.0, 3.2.3, 3.2.2, 3.2.1, 3.2.0, 3.1.10, 3.1.9, 3.1.8, 3.1.7, 3.1.6, 3.1.5, 3.1.4, 3.1.3, 3.1.2, 3.1.1, 3.0.2-beta3, 3.0.2-beta2, 3.0.2-beta1, 3.0.1, 3.0.0, 3.0.0-beta4, 3.0.0-beta3, 3.0.0-beta2, 3.0.0-beta1, 2.2.8, 2.2.7-beta7, 2.2.7-amd-beta2, 2.2.7-amd-beta1, 2.2.1-amd-beta1
+49 error notarget This is most likely not a problem with npm itself.
+49 error notarget In most cases you or one of your dependencies are requesting
+49 error notarget a package version that doesn't exist.
+50 verbose exit [ 1, true ]

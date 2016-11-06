@@ -17,28 +17,21 @@
 
 - output
 
-  TODO
+  1）熟悉打包输出文件的命名规则，按照单入口，多入口，非入口来区分命名；
 
-## output
-- 打包文件输出路径
-- 打包生成的 chunk 文件命名规则
+  2）支持不同类型的打包文件输出，例如：纯打包文件，AMD，CommonJS，UMD 等；
 
-## resolve
-- 配置模块别名
-- 配置模块扩展名
-- 配置第三方模块查找路径
+  3）打包公用库时，借助配置属性 externals 来排除第三方库； 
 
-## loader
-加载器配置
+- resolve
 
-## plugin
-插件配置
+  1）alias 可以灵活的替换模块，要懂得一些应用场景；
 
-## more
-调试
+  2）root 和 modulesDirectories 绝对第三方模块查找路径，配置的好，可以优化一些性能；
 
-- debug：设置开发模式
-- devtool：设置 source-map 级别
-- devServer：用于 webpack-dev-server 命令行
+  3）extensions 决定文件的匹配规则，需要结合具体项目使用；
 
-TODO
+- loader：略
+- plugin：略
+- devtool：TODO
+- others

@@ -1,0 +1,11 @@
+- externals：指定的模块不会被 webpac 处理，即不会合并在打包文件里
+- target
+- bail
+- profile
+- cache
+- watch
+- debug
+- devServer
+- node
+- amd
+- recordsPath, recordsInputPath, recordsOutputPath

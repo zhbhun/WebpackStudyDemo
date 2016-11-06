@@ -1,0 +1,10 @@
+webpack --config webpack.config.js
+webpack --config webpack.config.eval.js
+webpack --config webpack.config.source-map.js
+webpack --config webpack.config.hidden-source-map.js
+webpack --config webpack.config.inline-source-map.js
+webpack --config webpack.config.eval-source-map.js
+webpack --config webpack.config.cheap-module-source-map.js
+webpack --config webpack.config.cheap-module-eval-source-map.js
+webpack --config webpack.config.cheap-source-map.js
+webpack --config webpack.config.cheap-eval-source-map.js

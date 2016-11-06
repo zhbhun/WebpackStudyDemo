@@ -1,0 +1,7 @@
+{
+  "name": "webpack-echarts",
+  "version": "1.0.0",
+  "dependencies": {
+    "echarts": "^2.2.8"
+  }
+}
