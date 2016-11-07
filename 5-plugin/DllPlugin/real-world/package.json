@@ -1,0 +1,25 @@
+{
+  "name": "webpack-ddlplugin-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dd:jquery": "webpack --config ./webpack.dev.dll.jquery.config.js -d",
+    "dd:react": "webpack --config ./webpack.dev.dll.react.config.js -d",
+    "dd:antd": "webpack --config ./webpack.dev.dll.antd.config.js -d",
+    "dev": "webpack --config ./webpack.dev.config.js -d",
+    "pd:jquery": "webpack --config ./webpack.product.dll.jquery.config.js -p",
+    "pd:react": "webpack --config ./webpack.product.dll.react.config.js -p",
+    "pd:antd": "webpack --config ./webpack.product.dll.antd.config.js -p",
+    "product": "webpack --config ./webpack.product.config.js -p"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^1.6.5",
+    "jquery": "^3.1.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  }
+}

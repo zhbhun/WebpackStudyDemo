@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./pageA.js"],"names":[],"mappings":";;;;;;;AAAA;AACA;AACA","file":"pageA.js","sourcesContent":["require(\"./modules/a-b-c\");\nrequire(\"./modules/a-b\");\nrequire(\"./modules/a-c\");\n\n\n\n/*****************\n ** WEBPACK FOOTER\n ** ./pageA.js\n ** module id = 0\n ** module chunks = 3\n **/"],"sourceRoot":""}

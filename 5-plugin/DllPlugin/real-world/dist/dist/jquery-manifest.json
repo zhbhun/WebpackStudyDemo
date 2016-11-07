@@ -1,0 +1,6 @@
+{
+  "name": "jquery_library",
+  "content": {
+    "./node_modules/jquery/dist/jquery.js": 1
+  }
+}

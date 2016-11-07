@@ -1,0 +1,7 @@
+{
+  "name": "multiple-commons-chunks",
+  "version": "1.0.0",
+  "devDependencies": {
+    "webpack": "^1.13.1"
+  }
+}

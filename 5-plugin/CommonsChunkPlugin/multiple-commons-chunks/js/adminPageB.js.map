@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./adminPageB.js"],"names":[],"mappings":";;;;;;;AAAA;AACA,+C","file":"adminPageB.js","sourcesContent":["require(\"./modules/a-b-c\");\nrequire(\"./modules/admin\");\n\n\n/*****************\n ** WEBPACK FOOTER\n ** ./adminPageB.js\n ** module id = 0\n ** module chunks = 1\n **/"],"sourceRoot":""}

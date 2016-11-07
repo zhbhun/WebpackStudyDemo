@@ -38,10 +38,11 @@ $RECYCLE.BIN/
 # Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
+.apdisk
+.happypack
+node_modules
 Network Trash Folder
 Temporary Items
-.apdisk
-node_modules
 
 # sublime
 webpack.sublime-workspace

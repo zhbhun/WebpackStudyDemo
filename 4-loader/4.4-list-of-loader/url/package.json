@@ -1,0 +1,8 @@
+{
+  "name": "url-loader-demo",
+  "version": "1.0.0",
+  "devDependencies": {
+    "file-loader": "0.8.5",
+    "url-loader": "^0.5.7"
+  }
+}

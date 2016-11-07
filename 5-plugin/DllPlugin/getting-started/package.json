@@ -1,0 +1,12 @@
+{
+  "name": "webpack-ddlplugin-getting-started",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ddl": "webpack --config ./webpack.dll.react.config.js -d",
+    "build": "webpack --config ./webpack.config.js -d"
+  },
+  "author": "",
+  "license": "ISC"
+}

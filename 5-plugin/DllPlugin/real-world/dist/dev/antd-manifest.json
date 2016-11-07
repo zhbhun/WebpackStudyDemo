@@ -1,0 +1,6 @@
+{
+  "name": "antd_library",
+  "content": {
+    "./node_modules/antd/dist/antd.js": 1
+  }
+}

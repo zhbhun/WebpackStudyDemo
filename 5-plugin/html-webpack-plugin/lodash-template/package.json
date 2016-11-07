@@ -1,0 +1,15 @@
+{
+  "name": "webpack-html-plugin-lodash-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^2.21.0",
+    "webpack": "^1.13.1"
+  }
+}

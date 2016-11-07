@@ -1,0 +1,66 @@
+{
+  "dependencies": {
+    "babel-runtime": "^5.8.38",
+    "bootstrap": "^3.3.6",
+    "classnames": "^2.2.3",
+    "dom-helpers": "^2.4.0",
+    "invariant": "^2.2.1",
+    "keycode": "^2.1.1",
+    "lodash-compat": "^3.10.2",
+    "react": ">=0.14.0",
+    "react-dom": ">=0.14.0",
+    "react-overlays": "^0.6.3",
+    "react-prop-types": "^0.3.0",
+    "uncontrollable": "^3.2.3",
+    "warning": "^2.1.0"
+  },
+  "scripts": {
+    "start:default": "webpack-dev-server --config ./default/webpack.config.js",
+    "build:default": "webpack --config ./default/webpack.config.js",
+
+    "start:noParse": "webpack-dev-server --config ./noParse/webpack.config.js",
+
+    "start:root": "webpack-dev-server --config ./root/webpack.config.js",
+    "build:root": "webpack --config ./root/webpack.config.js",
+
+    "start:babel-cache": "webpack-dev-server --config ./babel/webpack.config.cache.js",
+    "build:babel-cache": "webpack --config ./babel/webpack.config.cache.js",
+
+    "start:babel-include": "webpack-dev-server --config ./babel/webpack.config.include.js",
+    "build:babel-include": "webpack --config ./babel/webpack.config.include.js",
+
+    "start:babel-exclude": "webpack-dev-server --config ./babel/webpack.config.exclude.js",
+    "build:babel-exclude": "webpack --config ./babel/webpack.config.exclude.js",
+
+    "start:babel-exclude": "webpack-dev-server --config ./babel/webpack.config.exclude.js",
+    "build:babel-exclude": "webpack --config ./babel/webpack.config.exclude.js",
+
+    "start:devtool-eval": "webpack-dev-server --config ./devtool/webpack.config.eval.js",
+    "start:devtool-source-map": "webpack-dev-server --config ./devtool/webpack.config.source-map.js",
+    "start:devtool-hidden-source-map": "webpack-dev-server --config ./devtool/webpack.config.hidden-source-map.js",
+    "start:devtool-inline-source-map": "webpack-dev-server --config ./devtool/webpack.config.inline-source-map.js",
+    "start:devtool-eval-source-map": "webpack-dev-server --config ./devtool/webpack.config.eval-source-map.js",
+    "start:devtool-cheap-source-map": "webpack-dev-server --config ./devtool/webpack.config.cheap-source-map.js",
+    "start:devtool-cheap-eval-source-map": "webpack-dev-server --config ./devtool/webpack.config.cheap-eval-source-map.js",
+
+    "build:UglifyJsPlugin": "webpack --config ./UglifyJsPlugin/webpack.config.js",
+
+    "build:OccurrenceOrderPlugin": "webpack --config ./OccurrenceOrderPlugin/webpack.config.js",
+
+    "build:DedupePlugin": "webpack --config ./DedupePlugin/webpack.config.js",
+
+    "prepare:DLLPlugin": "webpack --config ./DLLPlugin/webpack.dll.config.js",
+    "start:DLLPlugin": "webpack-dev-server --config ./DLLPlugin/webpack.config.dll.js",
+    "build:DLLPlugin": "webpack --config ./DLLPlugin/webpack.config.dll.js",
+
+    "start:happypack": "webpack-dev-server --config ./happypack/webpack.config.js",
+    "build:happypack": "webpack --config ./happypack/webpack.config.js",
+
+    "start:cache": "webpack-dev-server --config ./cache/webpack.config.js",
+    "build:cache": "webpack --config ./cache/webpack.config.js",
+
+    "prepare:best-practice": "webpack --config ./best-practice/webpack.dll.config.js",
+    "start:best-practice": "webpack-dev-server --config ./best-practice/webpack.config.dev.js",
+    "build:best-practice": "webpack --config ./best-practice/webpack.config.product.js"
+  }
+}

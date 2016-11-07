@@ -1,0 +1,36 @@
+{
+  "name": "react-hot-boilerplate-jsx-loader",
+  "version": "0.1.0",
+  "description": "Boilerplate for ReactJS project with hot code reloading.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhbhun/WebpackStudyDemo.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "boilerplate",
+    "hot",
+    "reload",
+    "hmr",
+    "webpack"
+  ],
+  "author": "zhbhun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhbhun/WebpackStudyDemo/issues"
+  },
+  "homepage": "https://github.com/zhbhun/WebpackStudyDemo",
+  "devDependencies": {
+    "jsx-loader": "~0.13.2",
+    "react-hot-loader": "^1.3.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "react": "~0.13.3"
+  }
+}
