@@ -239,6 +239,7 @@ Webpack 开发成员，以及一些 Webpack 相关值得关注的人
 # Webpack2
 - [Tree-shaking with webpack 2 and Babel 6](http://www.2ality.com/2015/12/webpack-tree-shaking.html)
 - [Webpack 2 Tree Shaking Configuration](https://moduscreate.com/webpack-2-tree-shaking-configuration/)
+- [Migrating to Webpack 2](http://javascriptplayground.com/blog/2016/10/moving-to-webpack-2/) - 21 October 2016 by Jack Franklin
 
 # 参考
 - [awesome-webpack](https://github.com/d3viant0ne/awesome-webpack#table-of-contents) - A curated list of awesome Webpack resources, libraries and tools. by [d3viant0ne](https://github.com/d3viant0ne).
