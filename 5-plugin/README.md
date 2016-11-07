@@ -2,3 +2,4 @@
 - [How to write a plugin](http://webpack.github.io/docs/list-of-loaders.html)
 - [List of plugins](http://webpack.github.io/docs/list-of-plugins.html)
 - [Plugin API](http://webpack.github.io/docs/plugins.html)
+- [深入了解 Webpack Plugins](https://rhadow.github.io/2015/05/30/webpack-loaders-and-plugins/)
