@@ -14,6 +14,10 @@ Webpack 除了帮我们实现私有项目的模块打包外，还可以用于开
     - `amd`：按 AMD 规范输出入口模块的输出值
     - `umd`：按 UMD 规范输出入口模块的输出值
 
+参考文献
+
+- [[译] 基于 Webpack 和 ES6 打造 JavaScript 类库](https://github.com/cssmagic/blog/issues/56)
+
 # bundle
 本示例主要是分析 webpack 打包文件的模块化实现机制，暂时不考虑如何暴露打包文件的输出值。
 
