@@ -1,2 +1,0 @@
-npm上发布的大多数模块的package.json的main都指向dist版本，通过webpack的resolver.alias配置其指向src版本可以更好的利用webpack来优化依赖关系（例如使用DedupePlugin）。
-在本例中分别测试两种不同配置方式（webpack.config.js和webpack.config.alias.js）来依赖jquery，对比构建后的文件内容。
