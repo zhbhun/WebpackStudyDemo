@@ -1,7 +1,0 @@
-{
-  "name": "code-splitted-dedupe",
-  "version": "1.0.0",
-  "devDependencies": {
-    "bundle-loader": "^0.5.4"
-  }
-}

@@ -1,1 +1,0 @@
-本Demo以jQuery为例介绍如何使用webpack的ProvidePlugin来解决jQuery插件队$或jQuery依赖的问题

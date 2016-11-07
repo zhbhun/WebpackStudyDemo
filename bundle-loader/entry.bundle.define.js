@@ -1,1 +1,0 @@
-require("./module-with-bundle-define");
