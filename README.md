@@ -231,7 +231,7 @@ Webpack 开发成员，以及一些 Webpack 相关值得关注的人
 - [generator-react-webpack](https://github.com/newtriks/generator-react-webpack)
 - [react-webpack-node](https://github.com/choonkending/react-webpack-node)
 - [react-static-boilerplate](https://github.com/koistya/react-static-boilerplate)
-- [ruanyf/react-babel-webpack-boilerplate](https://github.com/ruanyf/react-babel-webpack-boilerplate)
+- [ruanyf/react-babel-webpack-boilerplate](https://github.com/ruanyf/react-babel-webpack-boilerplate) - a boilerplate for React-Babel-Webpack project. 779 ★
 - [fullstack-react](https://github.com/Widen/fullstack-react)
 - [react-seed](https://github.com/badsyntax/react-seed)
 - [meteor-webpack-react](https://github.com/jedwards1211/meteor-webpack-react)
