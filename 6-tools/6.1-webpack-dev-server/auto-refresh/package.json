@@ -2,7 +2,9 @@
   "private": true,
   "scripts": {
     "default": "webpack-dev-server --config webpack.config.default.js --port 3000",
-    "custom": "webpack-dev-server --config webpack.config.webapp.js --port 3000"
+    "disable": "webpack-dev-server --config webpack.config.false.js --port 3000",
+    "enable": "webpack-dev-server --config webpack.config.true.js --port 3000",
+    "custom": "webpack-dev-server --config webpack.config.custom.js --port 3000"
   },
   "devDependencies": {
     "node-libs-browser": "^0.5.2",

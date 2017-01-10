@@ -1,1 +1,0 @@
-[getting-started](http://webpack.github.io/docs/tutorials/getting-started/)

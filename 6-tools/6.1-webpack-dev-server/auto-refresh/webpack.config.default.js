@@ -1,10 +1,8 @@
 module.exports = {
-  entry: "./src/webapp.js",
+  entry: "./src/entry.js",
   output: {
     path: './dist',
     filename: "bundle.js"
   },
-  devServer: {
-    contentBase: "./webapp"
-  }
+  devServer: {}
 };

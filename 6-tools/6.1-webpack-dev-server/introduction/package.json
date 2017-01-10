@@ -1,8 +1,7 @@
 {
-  "name": "getting-started",
-  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.config.js -d --progress --colors"
+    "start": "webpack-dev-server --config webpack.config.js --port 3000"
   },
   "devDependencies": {
     "css-loader": "^0.15.1",
