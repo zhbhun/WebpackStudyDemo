@@ -1,0 +1,68 @@
+1. 启动开发服务器
+
+    ```
+    Starting the development server...
+    ```
+
+2. 开发服务器启动成功
+
+    ```
+    Compiled successfully!
+
+    The app is running at:
+
+      http://localhost:3000/
+
+    Note that the development build is not optimized.
+    To create a production build, use yarn run build.
+    ```
+
+3. 调整代码正确，开始编译
+
+    ```
+    Compiling...
+    ```
+
+4. 调整代码正确，编译结束
+
+    ```
+    Compiled successfully!
+
+    The app is running at:
+
+      http://localhost:3000/
+
+    Note that the development build is not optimized.
+    To create a production build, use yarn run build.
+    ```
+5. 跳转代码错误
+
+    ```
+    Failed to compile.
+
+    Error in ./src/App.js
+    Syntax error: Expected corresponding JSX closing tag for <h21> (11:31)
+
+      9 |         <div className="App-header">
+      10 |           <img src={logo} className="App-logo" alt="logo" />
+    > 11 |           <h21>Welcome to React</h2>
+        |                                ^
+      12 |         </div>
+      13 |         <p className="App-intro">
+      14 |           To get started, edit <code>src/App.js</code> and save to reload.
+
+    @ ./src/index.js 13:11-27
+    ```
+
+6. 还原代码
+
+    ```
+    Compiled successfully!
+
+    The app is running at:
+
+      http://localhost:3000/
+
+    Note that the development build is not optimized.
+    To create a production build, use yarn run build.
+    ```
