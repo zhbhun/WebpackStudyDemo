@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "scripts": {
+    "test:module-case0": "webpack-dev-server --config ./module.test/case0/webpack.config.js --inline --hot --port 3000",
+    "test:module-case1": "webpack-dev-server --config ./module.test/case1/webpack.config.js --inline --hot --port 3000",
+    "test:module-case2": "webpack-dev-server --config ./module.test/case2/webpack.config.js --inline --hot --port 3000",
+    "test:module-case3": "webpack-dev-server --config ./module.test/case3/webpack.config.js --inline --hot --port 3000",
+    "test:module-case4": "webpack-dev-server --config ./module.test/case4/webpack.config.js --inline --hot --port 3000",
+    "dispose:module-case0": "webpack-dev-server --config ./module.dispose/case0/webpack.config.js --inline --hot --port 3000",
+    "decline:module-case0": "webpack-dev-server --config ./module.decline/case0/webpack.config.js --inline --hot --port 3000"
+  },
+  "devDependencies": {
+    "webpack": "1.x.x",
+    "webpack-dev-server": "1.x.x"
+  }
+}
