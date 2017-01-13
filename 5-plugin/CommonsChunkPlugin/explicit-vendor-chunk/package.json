@@ -1,13 +1,11 @@
 {
-  "name": "explicit-vendor-chunk",
-  "version": "1.0.0",
-  "description": "",
-  "main": "./src/index.js",
+  "private": true,
   "scripts": {
     "test": "webpack --config webpack.config.js",
     "test1": "webpack --config webpack.config.1.js",
     "test2": "webpack --config webpack.config.2.js",
-    "test3": "webpack --config webpack.config.3.js"
+    "test3": "webpack --config webpack.config.3.js",
+    "test4": "webpack --config webpack.config.4.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +14,7 @@
   },
   "dependencies": {
     "jquery": "^2.1.4",
-    "react": "^0.14.3"
+    "lodash": "^4.17.4",
+    "react": "^15.4.2"
   }
 }

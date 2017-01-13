@@ -1,0 +1,19 @@
+{
+  "name": "app_library",
+  "content": {
+    "./src/index.js": 1,
+    "./node_modules/lodash/throttle.js": 2,
+    "./node_modules/lodash/debounce.js": 3,
+    "./node_modules/lodash/isObject.js": 4,
+    "./node_modules/lodash/now.js": 5,
+    "./node_modules/lodash/_root.js": 6,
+    "./node_modules/lodash/_freeGlobal.js": 7,
+    "./node_modules/lodash/toNumber.js": 8,
+    "./node_modules/lodash/isSymbol.js": 9,
+    "./node_modules/lodash/_baseGetTag.js": 10,
+    "./node_modules/lodash/_Symbol.js": 11,
+    "./node_modules/lodash/_getRawTag.js": 12,
+    "./node_modules/lodash/_objectToString.js": 13,
+    "./node_modules/lodash/isObjectLike.js": 14
+  }
+}

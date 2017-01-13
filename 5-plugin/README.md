@@ -1,5 +1,19 @@
 - NoErrorsPlugin
+
+# 日志
 - ProgressPlugin
+- [friendly-errors-webpack-plugin](https://www.npmjs.com/package/friendly-errors-webpack-plugin)
+- [progress-bar-webpack-plugin](https://www.npmjs.com/package/progress-bar-webpack-plugin)
+
+
+
+TODO
+
+- [case-sensitive-paths-webpack-plugin](https://github.com/Urthen/case-sensitive-paths-webpack-plugin)
+- https://github.com/facebookincubator/create-react-app/tree/master/packages/react-dev-utils#new-interpolatehtmlpluginreplacements-keystring-string
+- https://github.com/facebookincubator/create-react-app/tree/master/packages/react-dev-utils#new-watchmissingnodemodulespluginnodemodulespath-string
+- [add-asset-html-webpack-plugin](https://github.com/simenb/add-asset-html-webpack-plugin)
+- https://github.com/danethurber/webpack-manifest-plugin
 
 ---
 

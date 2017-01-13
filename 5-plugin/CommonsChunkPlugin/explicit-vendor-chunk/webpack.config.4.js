@@ -15,16 +15,24 @@ function isExternal(module) {
 
 module.exports = {
   entry: {
+    common: [
+      'lodash',
+      'react',
+    ],
     app: [
       path.resolve(__dirname, 'src/index.js'),
     ],
   },
   output: {
-    path: path.resolve(__dirname, 'dist/3'),
+    path: path.resolve(__dirname, 'dist/4'),
     filename: '[name].js',
     pathinfo: true,
   },
   plugins: [
+    new webpack.DllPlugin({
+      path: path.resolve(__dirname, 'dist/4/[name]-manifest.json'),
+      name: '[name]_library',
+    }),
     new webpack.optimize.CommonsChunkPlugin({
       name: "common",
 
@@ -36,7 +44,6 @@ module.exports = {
       },
       // (with more entries, this ensures that no other module
       //  goes into the vendor chunk)
-    })
-
-  ]
-}
+    }),
+  ],
+};

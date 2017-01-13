@@ -1,0 +1,6 @@
+{
+  "name": "app_library",
+  "content": {
+    "./src/index.js": 1
+  }
+}
