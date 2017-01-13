@@ -5,7 +5,8 @@
     "test1": "webpack --config webpack.config.1.js",
     "test2": "webpack --config webpack.config.2.js",
     "test3": "webpack --config webpack.config.3.js",
-    "test4": "webpack --config webpack.config.4.js"
+    "test4": "webpack --config webpack.config.4.js",
+    "test5": "webpack --config webpack.config.5.js"
   },
   "author": "",
   "license": "ISC",
