@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js",
+    "start": "webpack-dev-server --config ./webpack.config.js --quite --port 3000"
+  },
+  "devDependencies": {
+    "friendly-errors-webpack-plugin": "^1.1.2",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
