@@ -118,9 +118,9 @@ webpack: bundle is now VALID.
 
     总结：没有任何作用。
 
-- `webpack-dev-server --config ./webpack.config.dev.js --quite --host localhost --port 3000`
+- `webpack-dev-server --config ./webpack.config.dev.js --quiet --host localhost --port 3000`
 
-    `--quite` 选项使 `webpack-dev-server` 在控制台不输出任何东西，无法查看构建统计信息，即使存在编译错误，也不会输出错误日志。
+    `--quiet` 选项使 `webpack-dev-server` 在控制台不输出任何东西，无法查看构建统计信息，即使存在编译错误，也不会输出错误日志。
 
     总结：无法知道任何构建信息。
 
