@@ -175,3 +175,7 @@ React Transform 和 React Hot Loader v1 基本能够满足组件状态不变的�
     目前的热加载方案对 sourcemap 的支持还存在问题，点击控制台打印的错误行信息，看到的源代码还是修改前，必须刷新浏览器才性。
     
     备注：关于 sourcemap 的问题可以参考 Issue [Source maps don't update](https://github.com/gaearon/react-hot-loader/issues/180)，客户端源代码不能实时更新似乎是 chrome bug 导致的，但 bug 是一年前提的，具体问题还有待调查。就目前来说，一般修改代码导致的错误，根据控制台的错误报告，一般很快地能够判断处错误原因。
+
+# TODO
+
+- https://www.youtube.com/watch?v=xsSnOQynTHs
