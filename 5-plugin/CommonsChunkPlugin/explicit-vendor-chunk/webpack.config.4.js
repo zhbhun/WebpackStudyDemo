@@ -10,7 +10,7 @@ module.exports = {
     react: ['react'],
   },
   output: {
-    path: path.resolve(__dirname, 'dist/5'),
+    path: path.resolve(__dirname, 'dist/4'),
     filename: '[name].js',
     pathinfo: true,
   },

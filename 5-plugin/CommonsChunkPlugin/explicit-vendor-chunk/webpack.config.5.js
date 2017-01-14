@@ -8,7 +8,7 @@ module.exports = {
     ],
   },
   output: {
-    path: path.resolve(__dirname, 'dist/4'),
+    path: path.resolve(__dirname, 'dist/5'),
     filename: '[name].js',
     pathinfo: true,
   },
