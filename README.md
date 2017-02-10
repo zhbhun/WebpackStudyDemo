@@ -1,43 +1,4 @@
-```
-.
-├── 1-begin
-│   ├── 1.1-what
-│   ├── 1.2-why
-│   ├── 1.3-getting-started
-│   ├── 1.4-getting-serious
-├── 2-module
-│   ├── 2.1-commonjs
-│   ├── 2.2-amd
-│   ├── 2.3-label
-│   ├── 2.4-commonjs-vs-amd
-│   ├── 2.5-advanced
-│   ├── 2.6-deprecated
-├── 3-setting
-│   ├── 3.1-usage
-│   ├── 3.2-context
-│   ├── 3.3-entry
-│   ├── 3.4-output
-│   ├── 3.5-resolve
-│   ├── 3.6-loader
-│   ├── 3.7-plugin
-│   ├── 3.8-devtool
-│   ├── 3.9-others
-├── 4-loader
-│   ├── 4.1-introduction
-│   ├── 4.2-usage
-│   ├── 4.3-custom
-│   ├── 4.4-list-of-loader
-│   ├── 4.5-advanced
-├── 5-plugin
-├── 6-tools
-│   ├── 6.1-webpack-dev-server
-│   ├── 6.2-webpack-dev-middleware
-│   └── 6.3-webpack-hot-middleware
-├── 7-advanced
-│   ├── 7.1-code-split
-│   ├── 7.2-react-hot-loader
-│   └── 7.3-build-performance
-```
+![webpack.png](./.attachment/webpack.png)
 
 # 目录
 
@@ -75,8 +36,9 @@
 <!-- /TOC -->
 
 # 文档
-- [Webpack 官方文档](http://webpack.github.io)
+- [Webpack 官方文档](https://webpack.js.org/)
 - [Webpack 中文指南](http://zhaoda.net/webpack-handbook/)
+- [Webpack 发布声明](https://github.com/webpack/webpack/releases)
 
 # 社区
 - [Gitter Chat](https://gitter.im/webpack/webpack)
@@ -117,7 +79,7 @@ Webpack 开发成员，以及一些 Webpack 相关值得关注的人
 - [Browserify vs. Webpack]( http://www.oschina.net/translate/browserify-vs-webpack)
 - [Webpack Compared](http://survivejs.com/webpack/webpack-compared/)
 - [WEBPACK FOR BROWSERIFY USERS](http://webpack.github.io/docs/webpack-for-browserify-users.html)
-
+- [Comparison with other bundlers](https://webpack.js.org/guides/comparison/)
 
 ##集成
 
@@ -272,9 +234,11 @@ Webpack 开发成员，以及一些 Webpack 相关值得关注的人
 - [webpack 源码解析](https://lihuanghe.github.io/2016/05/30/webpack-source-analyse.html)
 
 # Webpack2
+- [webpack 2.2: The Final Release](https://medium.com/webpack/webpack-2-2-the-final-release-76c3d43bf144#.uv98q5wx6)
+- [Migrating from v1 to v2](https://webpack.js.org/guides/migrating/)
+- [Migrating to Webpack 2](http://javascriptplayground.com/blog/2016/10/moving-to-webpack-2/) - 21 October 2016 by Jack Franklin
 - [Tree-shaking with webpack 2 and Babel 6](http://www.2ality.com/2015/12/webpack-tree-shaking.html)
 - [Webpack 2 Tree Shaking Configuration](https://moduscreate.com/webpack-2-tree-shaking-configuration/)
-- [Migrating to Webpack 2](http://javascriptplayground.com/blog/2016/10/moving-to-webpack-2/) - 21 October 2016 by Jack Franklin
 
 # 参考
 - [awesome-webpack](https://github.com/d3viant0ne/awesome-webpack#table-of-contents) - A curated list of awesome Webpack resources, libraries and tools. by [d3viant0ne](https://github.com/d3viant0ne).
