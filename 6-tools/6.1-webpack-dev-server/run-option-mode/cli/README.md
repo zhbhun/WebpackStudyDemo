@@ -1,1 +1,0 @@
-测试webpack-dev-server的运行选项content-base：配置服务器静态资源所在路径
