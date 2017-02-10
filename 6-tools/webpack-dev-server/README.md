@@ -243,6 +243,8 @@ webpack 开发服务器提供 Node.js API 来启动，使用方法：`new Webpac
 
 参考文献：http://webpack.github.io/docs/webpack-dev-server.html#api
 
+# 热加载分析
+参考 `./hot-module-replacement-analysis`
 
 # 最佳实战
 在真实的项目开发中，前端需要与后台服务器交互——传输业务数据，这里通常会有一个后台服务器来向前端提供业务数据接口，我们也是在浏览器中访问这个后台服务器来使用功能的。这样的话，我们就需要将webpack生成的静态资源拷贝到我们项目的后台服务器下。如果是在最后发布的话，这样没有什么问题，但在实际开发中，每次调整代码都需要这么做，开发人员在就放弃使用webpack了。

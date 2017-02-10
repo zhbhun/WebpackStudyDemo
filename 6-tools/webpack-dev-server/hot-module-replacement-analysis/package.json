@@ -10,7 +10,7 @@
     "decline:module-case0": "webpack-dev-server --config ./module.decline/case0/webpack.config.js --inline --hot --port 3000"
   },
   "devDependencies": {
-    "webpack": "1.x.x",
-    "webpack-dev-server": "1.x.x"
+    "webpack": "2.2.0",
+    "webpack-dev-server": "2.3.0"
   }
 }

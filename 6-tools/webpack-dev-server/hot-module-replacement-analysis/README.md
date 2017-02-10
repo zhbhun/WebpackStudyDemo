@@ -1,9 +1,10 @@
 模块热加载可以在程序运行时动态替换，增加或删除模块，而不用刷新网页。
 
-# 配置
+- [HOT MODULE REPLACEMENT For Webpack1](http://webpack.github.io/docs/hot-module-replacement.html)
+- [Hot Module Replacement For Webpack2](https://webpack.js.org/concepts/hot-module-replacement/)
+- [Hot Module Replacement - React](https://webpack.js.org/guides/hmr-react)
 
 # 用法
-- [HOT MODULE REPLACEMENT](http://webpack.github.io/docs/hot-module-replacement.html)
 - [accept](http://webpack.github.io/docs/hot-module-replacement.html#accept)：接收指定依赖的代码更新
 - [decline](http://webpack.github.io/docs/hot-module-replacement.html#accept)：不接收指定依赖的代码更新
 - [dispose](http://webpack.github.io/docs/hot-module-replacement.html#dispose-adddisposehandler)：？
@@ -14,7 +15,7 @@
 - [removeStatusHandler](http://webpack.github.io/docs/hot-module-replacement.html#removestatushandler)
 
 ## 模块替换规则
-热加载是可选择性的功能，只替换包含热加载代码的模块。但在大多数情况下，不需要在每个模块里都编写模块热加载代码。如果一个模块没有模块热替换代码，它会按依赖关系向入口冒泡代码调整事件，直到找到可以处理模块更新的热加载代码为止。如果一直到入口都没有处理模块更新的热加载代码，那么 webpack 的客户端热加载运行时会自动刷新浏览器。通常情况下，我们只要在程序的入口添加热加载代码，就可以处理整个项目模块的热加载。
+热加载是可选择性的功能，只替换包含热加载代码的模块。但在大多数情况下，不需要在每个模块里都编写模块热加载代码。如果一个模块没有模块热替换代码，它会按依赖关系向入口冒泡代码调整事件，直到找到可以处理模块更新的热加载代码为止。如果一直到入口都没有处理模块更新的热加载代码，那么 webpack 的客户端的热加载运行时会自动刷新页面。通常情况下，我们只要在程序的入口添加热加载代码，就可以处理整个项目模块的热加载。
 
 要点：
 
@@ -94,7 +95,6 @@
 ## 样式热加载
 `style-loader` 内置实现了样式热加载。
 
-
 # 原理
 Webpack 在模块打包文件里添加了一个 HMR（模块热替换） 运行时，在构建时运行在客户端程序里。当 Webpack 构建完成后不会退出，而是继续监听源代码的修改。如果发现源代码有调整，Webpack 只重新编译构建修改的模块。然后 Webpack 向客户端的 HMR 运行时发送信号（或者 HMR 在客户端轮寻访问构建服务器），告诉 HMR 代码调整了，并将修改的模块被发送给 HMR 运行时。HMR 会负责处理更新的模块，首先，确认更新的模块是否可以接受热加载。如果不行的话，会检查有依赖该模块的其他模块是否可以（类似冒泡事件），直到找到可以接受热加载的模块为止。如果直到程序入口都没有找到可以处理的模块，那么 HMR 认为热更新失败。
 
@@ -158,7 +158,6 @@ Webpack 在模块打包文件里添加了一个 HMR（模块热替换） 运行�
 - `webpack/hot/dev-server` 和 `webpack/hot/only-dev-server` 的区别
 
     在热加载更新失败时，`webpack/hot/dev-server` 会刷新网页，而 `webpack/hot/only-dev-server` 需要手动刷新。
-
 
     [Opt-in to disable page reload when using HMR](https://github.com/webpack/webpack/issues/418)
 
