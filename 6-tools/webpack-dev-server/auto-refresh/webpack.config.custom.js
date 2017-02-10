@@ -4,7 +4,10 @@ module.exports = {
     './src/entry.js',
   ],
   output: {
-    path: './dist',
+    path: __dirname,
     filename: 'bundle.js',
   },
+  devServer: {
+    inline: false
+  }
 };

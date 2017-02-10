@@ -1,8 +1,11 @@
 webpack-dev-server 是一个轻量级的 Node.js Express 服务器，使用 webpack-dev-server 打包生成的文件通过服务器来向客户端提供，而不会在文件系统中生成。另外，webpack-dev-server 自带有一个轻量级的 runtime，浏览器可以通过 Socket.IO 与服务器连接，服务器向客户端浏览器送编译状态信息，然后客户端根据这些信息做相应的处理，如：刷新，模块热替换等。
 
+- [DevServer](https://webpack.js.org/configuration/dev-server/#devserver-inline-cli-only)
+- [Development](https://webpack.js.org/guides/development/)
+- [Hot Module Replacement - React](https://webpack.js.org/guides/hmr-react/)
+
 # 安装使用
-- 全局安装：`npm install -g webpack-dev-server`
-- 本地安装：`npm install webpack-dev-server --save-dev`
+`npm install webpack-dev-server --save-dev`
 
 入门示例：`./introduction`
 
@@ -13,19 +16,72 @@ webpack-dev-server 是一个轻量级的 Node.js Express 服务器，使用 webp
 备注：运行示例观察 webpack-dev-server 是否会在文件系统中生成打包文件，并观察浏览器打开的网页是否正常显示，以及分析网页加载的脚本。
 
 # 命令行用法
-## 静态资源
-命令行选项 `--content-base` 可以指定一个目录，在该目录下的资源可以通过 webpack-dev-server 启动的服务器访问，默认是当前目录。
+webpack-dev-server 除了支持 webpack 的打包命令行选项（输入，输出，加载器以及一些进阶配置）之外，还支持一些开发服务器特定的选项。输入 `webpack-dev-server --help` 查看帮助信息。
+
+除了使用命令行选项外，也可以在 webpack 配置文件的选项 devServer 中进行相应的配置，下面的示例中统一使用配置文件的方式实现。
+
+## 设置地址和端口
+`devServer.host` 和 `devServer.port` 用于设置开发服务器的地址和端口号。
+
+## 开启静态资源压缩
+`devServer.compress` 决定是否开启 gzip，true 表示开启 gzip 并压缩服务器提供的每一个静态资源。默认为 false。
+
+备注：对应命令行选项 `--compress`。
+
+## 设置静态资源路径
+`devServer.contentBase` 告诉开发服务器静态资源的路径，设置后该路径的资源都可以通过开发服务器访问。默认配置下，开发服务器会使用当前的工作目录作为静态资源路径。
+
+`devServer.contentBase` 可以设置字符串或（单个路径）字符串数组（多个路径），需要注意的是，我们使用的时候最好设置绝对路径。
 
 测试示例
 
 - `cd ./content-base`
 - `npm run default` / `npm run custom`
 - http://localhost:3000/
+
+备注：要知道访问 `devServer.contentBase` 指定的资源时，路径是怎样的？
     
-备注：`--content-base` 可以是相对路径，也可以是绝对路径，但最好是使用绝对路径，因为相对路径依赖 `webpack-dev-server` 启动的路径。
+## 设置打包资源路径
+webpack 开发服务器默认提供的打包文件是放在服务器根目录下的，例如：服务器运行在 `http://localhost:8080`，`output.filename` 设置为 `bundle.js`，则打包文件的访问地址为 `http://localhost:8080/bundle.js`。如果要更改打包资源的路径，可以设置 `devServer.publicPath`，默认为 `/`，如果设置为 `/assets/`，打包文件的地址变为 `http://localhost:8080/assets/bundle.js`。
+
+除了给 `devServer.publicPath` 设置相对路径外，也可以设置一个完整的 URL，这在开启热加载的时候很有必要。
+
+备注：
+
+- `devServer.publicPath` 不会影响 `devServer.contentBase` 指定的静态资源访问路径。
+- `devServer.publicPath` 如果是相对路径的话，必须在前后添加 `/`。
+- `devServer.publicPath` 和 `output.publicPath` 要保持一致（?）。
+
+## 设置自动打开浏览器
+TODO
+
+## 代理
+TODO
+
+- http://webpack.github.io/docs/webpack-dev-server.html#proxy
+- http://webpack.github.io/docs/webpack-dev-server.html#bypass-the-proxy
+- http://webpack.github.io/docs/webpack-dev-server.html#rewriting-urls-of-proxy-request
+- http://webpack.github.io/docs/webpack-dev-server.html#proxying-local-virtual-hosts
+
+## 关闭客户端日志
+在开启自动刷新和热加载时，浏览器的开发者控制台会输出一些日志信息，例如：重新加载通知，错误信息等。但是这些信息可读性差，可能会干扰我们调试程序。我们可以设置 `devServer.clientLogLevel` 为 `'none'` 来关闭客户端日志。
+
+备注：`devServer.clientLogLevel` 支持的选项 `none`，`error`，`warning` 和 `info`（默认）。
+
+## 开启客户端错误显示层
+TODO
+
+## 设置服务器控制台日志
+- `devServer.noInfo`：设置为 `true` 后，开发服务器启动日志和重构建日志都被隐藏，但是错误和警告信息仍然显示，默认为 `false`。
+- `devServer.quiet`：设置为 `true` 后，开发服务器在控制台不输出任何日志信息，即使遇到错误和警告。
+
+## 支持单页应用程序
+如果浏览器访问的页面是开发服务器提供的（也有可能存在 webpack 打包服务器和业务服务器，webpack 只负责提供前端静态资源，HTML 网页是由业务服务器提供的），而且是使用了 HTML5 History APi 的单页应用程序，那么需要开启 `devServer.historyApiFallback`（设置为 true），实现带路径地址的请求转发至入口 HTML。
+
+`devServer.historyApiFallback` 还可以设置为一个对象选项，控制哪些路径的请求交给哪个页面处理。
 
 ## 自动刷新
-在调整代码时，wepack-dev-server 支持客户端自动刷新。目前，webpack-dev-server 提供了两种模式实现自动刷新。
+Webpack2 默认开启了自动刷新功能，在调整代码时，wepack-dev-server 会通知浏览器刷新页面。目前，webpack-dev-server 提供了两种模式实现自动刷新。
 
 - iframe
 
@@ -114,9 +170,7 @@ webpack-dev-server 是一个轻量级的 Node.js Express 服务器，使用 webp
 
 备注：浏览器控制台会输出 `[HMR]` 和 `[WDS]` 打头的日志，前者是来自 `webpack/hot/dev-server` 的打印日志，后者是来自 `webpack-dev-server` 的打印日志。
 
-
 常见问题：
-
 
 1. [Hot reload module failed : Cannot apply update. Need to do a full reload!](https://github.com/webpack/webpack-dev-server/issues/395)
 
@@ -160,7 +214,7 @@ webpack-dev-server 是一个轻量级的 Node.js Express 服务器，使用 webp
 
     ```
     if (module.hot) {
-    module.hot.accept()
+      module.hot.accept()
     }
     ```
 
@@ -170,98 +224,27 @@ webpack-dev-server 是一个轻量级的 Node.js Express 服务器，使用 webp
 
 3. TODO：It’s important to specify a correct output.publicPath otherwise the hot update chunks cannot be loaded.
 
-## 代理
-TODO
-
-- http://webpack.github.io/docs/webpack-dev-server.html#proxy
-- http://webpack.github.io/docs/webpack-dev-server.html#bypass-the-proxy
-- http://webpack.github.io/docs/webpack-dev-server.html#rewriting-urls-of-proxy-request
-- http://webpack.github.io/docs/webpack-dev-server.html#proxying-local-virtual-hosts
-
 ## 其他
 TODO
 
 http://webpack.github.io/docs/webpack-dev-server.html#webpack-dev-server-cli
 
 # API 用法
+webpack 开发服务器提供 Node.js API 来启动，使用方法：`new WebpackDevServer(webpack(config), {...})`，该方法的第二个参数是开发服务器的配置选项（通过 API 调用是不会读取配置文件的 devServer 选项的）。
+
+测试示例
+
+- 入门示例：https://github.com/webpack/webpack-dev-server/blob/master/examples/node-api-simple/server.js
+
+    - 地址和端口号不是在配置选项中设置，在 `listen` 方法的参数中设定。
+    - 默认没有开启自动刷新，需要手动在程序入口添加自动刷新模块。
+
 - 热加载：参考示例 `./hot-module-replacement`
 
----
-
-```
-// Enable gzip compression of generated files.
-compress: true,
-// Silence WebpackDevServer's own logs since they're generally not useful.
-// It will still show compile warnings and errors with this setting.
-clientLogLevel: 'none',
-// By default WebpackDevServer serves physical files from current directory
-// in addition to all the virtual build products that it serves from memory.
-// This is confusing because those files won’t automatically be available in
-// production build folder unless we copy them. However, copying the whole
-// project directory is dangerous because we may expose sensitive files.
-// Instead, we establish a convention that only files in `public` directory
-// get served. Our build script will copy `public` into the `build` folder.
-// In `index.html`, you can get URL of `public` folder with %PUBLIC_PATH%:
-// <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-// In JavaScript code, you can access it with `process.env.PUBLIC_URL`.
-// Note that we only recommend to use `public` folder as an escape hatch
-// for files like `favicon.ico`, `manifest.json`, and libraries that are
-// for some reason broken when imported through Webpack. If you just want to
-// use an image, put it in `src` and `import` it from JavaScript instead.
-contentBase: paths.appPublic,
-// Enable hot reloading server. It will provide /sockjs-node/ endpoint
-// for the WebpackDevServer client so it can learn when the files were
-// updated. The WebpackDevServer client is included as an entry point
-// in the Webpack development configuration. Note that only changes
-// to CSS are currently hot reloaded. JS changes will refresh the browser.
-hot: true,
-// It is important to tell WebpackDevServer to use the same "root" path
-// as we specified in the config. In development, we always serve from /.
-publicPath: config.output.publicPath,
-// WebpackDevServer is noisy by default so we emit custom message instead
-// by listening to the compiler events with `compiler.plugin` calls above.
-quiet: true,
-// Reportedly, this avoids CPU overload on some systems.
-// https://github.com/facebookincubator/create-react-app/issues/293
-watchOptions: {
-    ignored: /node_modules/
-},
-// Enable HTTPS if the HTTPS environment variable is set to 'true'
-https: protocol === "https",
-host: host
-```
-
----
+参考文献：http://webpack.github.io/docs/webpack-dev-server.html#api
 
 
-
-- [WEBPACK DEV SERVER](http://webpack.github.io/docs/webpack-dev-server.html)
-- [devServer configuration option](http://webpack.github.io/docs/configuration.html#devserver)
-
-
-# 开发工具
-## webpack-dev-server
-### 认识webpack-dev-server
-
-
-### webpack-dev-server命令行接口
-所有的webpack命令选项对webpack-dev-server命令都有效，但是没有默认的output参数。除此之外，webpack-dev-server还有一些额外的选项:
-- `--content-base`: 可以是文件、目录或者url，表示静态资源的基础路径
-- `--quiet`: 布尔值，控制是否要在控制台输出所有信息
-- `--colors`: 为控制台输出信息增加一些颜色
-- `--no-info`: 禁止输出一些无聊的信息？
-- `--host`: 主机名或ip地址
-- --port: 端口号
-- --inline: 布尔值，表示是否要将webpack-dev-server runtime集成到模块打包文件里，可以实现浏览器与服务器的通信
-- `--hot`: 布尔值，表示增加HotModuleReplacementPlugin插件，且将服务器切换到热模式中。注意点：不要再额外添加HotModuleReplacementPlugin
-- `--https`: 布尔值，表示webpack-dev-server是否开启HTTPS协议
-
-
-### webpack-dev-server API
-http://webpack.github.io/docs/webpack-dev-server.html#api
-
-
-### 最佳实战
+# 最佳实战
 在真实的项目开发中，前端需要与后台服务器交互——传输业务数据，这里通常会有一个后台服务器来向前端提供业务数据接口，我们也是在浏览器中访问这个后台服务器来使用功能的。这样的话，我们就需要将webpack生成的静态资源拷贝到我们项目的后台服务器下。如果是在最后发布的话，这样没有什么问题，但在实际开发中，每次调整代码都需要这么做，开发人员在就放弃使用webpack了。
 当然，webpack已经为我们解决了这个问题，我们只需要同时运行后台服务器和webpack-dev-server——后台服务器的HTML页面包含 指向webpack-dev-server静态资源的script标签，而 webpack-dev-server只是充当前端静态资源的服务器。
 示例：
@@ -286,3 +269,15 @@ module.exports = {
 注意点：
 - 为了保证总是（为了非入口模块）向webpack-dev-server发送请求来获得静态资源，必须向output.publicPath提供一个完整的URL——如果只是个目录路径的话，非入口模块静态资源的请求会向后台服务器发送，而不是webpack-dev-server
 - 为了连接webpacl-dev-server和它的runtime最好在webpack-dev-server命令后加上选项`--inline`
+
+# 常见问题
+## Webpack 变更
+- 默认开启 `--inline`
+- 增加命令行选项 `--hot-only`（等同于在程序入口添加 `webpack/hot/only-dev-server`）
+- 增加配置选项 `clientLogLevel`（对应 `--client-log-level`）
+- 增加命令行选项 `--no-content-base`（禁用静态资源服务）
+- 修正 `--progress` 不能使用的问题
+- 增加配置选项 `watchContentBase` 和 命令行 `--watch-content-base`（控制是否监听静态资源的变更）
+- 增加配置选项 `overlay`（开启客户端错误显示层）
+
+更多详情参考 [Release](https://github.com/webpack/webpack-dev-server/releases)

@@ -5,6 +5,6 @@ const config = require("./webpack.config.api.js");
 
 const compiler = webpack(config);
 const server = new webpackDevServer(compiler, {
-  hot: true
+  hot: true,
 });
 server.listen(3000);
