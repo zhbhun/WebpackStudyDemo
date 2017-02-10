@@ -1,6 +1,0 @@
-{
-  "private": false,
-  "scripts": {
-    "build": "webpack"
-  }
-}
