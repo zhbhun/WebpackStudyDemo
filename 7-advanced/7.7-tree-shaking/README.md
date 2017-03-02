@@ -15,3 +15,36 @@ uglifyjs
 问题
 
 - ...
+
+
+
+```javascript
+// helpers.js
+export function foo() {
+    return 'foo';
+}
+export function bar() {
+    return 'bar';
+}
+
+// main.js
+import {foo} from './helpers';
+
+let elem = document.getElementById('output');
+elem.innerHTML = `Output: ${foo()}`;
+```
+
+```javascript
+function(module, exports, __webpack_require__) {
+
+    /* harmony export */ exports["foo"] = foo;
+    /* unused harmony export bar */;
+
+    function foo() {
+        return 'foo';
+    }
+    function bar() {
+        return 'bar';
+    }
+}
+```
