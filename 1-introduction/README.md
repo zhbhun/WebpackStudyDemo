@@ -87,6 +87,17 @@ Webpack 本身是个模块打包器，并没有提出新的模块化方案。但
 - Browserify
 - Rollup 
 
+- [RequireJS vs Browserify vs Webpack](https://www.reddit.com/r/javascript/comments/3azxtj/requirejs_vs_browserify_vs_webpack/)
+- [为何webpack风靡全球？三大主流模块打包工具对比](http://www.techug.com/post/webpack-requirejs-browserify.html)
+- [前端模块化开发及 browserify, webpack, rollup 等打包工具的性能代价](https://gold.xitu.io/entry/57f3a4f47db2a2005928e4af)
+
+误区
+
+- 包管理工具: npm，yarn，cnpm，bower，ied 等。
+- 模块加载器: requirejs，seajs 等。
+- 打包工具: r.js, browserify, webpack, rollup 等。
+- 自动化构建工具: gruntjs, gulpjs, yeoman, fis3, coolie 等。
+
 # 概念
 Webpack 是为现代 JavaScript 应用程序提供的模块构建器，在使用 Webpack 的过程中必须先了解其中的四个概念。更多详情参考 [Concepts](https://webpack.js.org/concepts/)。
 
