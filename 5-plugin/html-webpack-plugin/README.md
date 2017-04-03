@@ -226,6 +226,9 @@ plugins: [
 ]
 ```
 
+# 增强插件
+- [add-asset-html-webpack-plugin](https://github.com/simenb/add-asset-html-webpack-plugin)
+
 # 参考文献
 - [Webpack HTML plug-in in a Nutshell](http://www.jonathan-petitcolas.com/2016/01/23/webpack-html-plugin-in-a-nutshell.html)
 - [webpack 插件： html-webpack-plugin](http://www.cnblogs.com/haogj/p/5160821.html)

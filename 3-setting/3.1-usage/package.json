@@ -7,7 +7,7 @@
     "jquery": "^3.1.1"
   },
   "devDependencies": {
-    "webpack": "^1.13.3"
+    "webpack": "^2.2.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

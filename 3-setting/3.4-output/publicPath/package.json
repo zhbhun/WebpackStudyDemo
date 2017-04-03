@@ -1,0 +1,22 @@
+{
+  "name": "webpack-publicpath",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "default": "webpack --config ./webpack.config.default.js",
+    "relative": "webpack --config ./webpack.config.relative.js",
+    "server": "webpack --config ./webpack.config.server.js",
+    "cdn": "webpack --config ./webpack.config.cdn.js",
+    "xxx": "webpack-dev-server --config ./webpack.config.xxx.js",
+    "xxx1": "node ./server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^2.28.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
+  }
+}

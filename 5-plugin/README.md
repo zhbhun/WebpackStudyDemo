@@ -23,3 +23,8 @@ TODO
 - [Plugin API](http://webpack.github.io/docs/plugins.html)
 - [深入了解 Webpack Plugins](https://rhadow.github.io/2015/05/30/webpack-loaders-and-plugins/)
 
+
+---
+
+# 输出
+- [NoEmitOnErrorsPlugin](https://github.com/webpack/webpack/blob/master/lib/NoEmitOnErrorsPlugin.js)

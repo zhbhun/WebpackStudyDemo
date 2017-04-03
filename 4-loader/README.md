@@ -11,3 +11,7 @@
 3. 怎么自定义加载器？
 4. 整理常用的加载器，如何查找自己需要的加载器？
 5. 更多用法：noPrase，preLoader，postLoader
+
+---
+
+- [eslint-loader](https://github.com/MoOx/eslint-loader)

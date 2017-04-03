@@ -68,9 +68,14 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/* unknown exports provided */
+/* all exports used */
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
 /***/ (function(module, exports) {
 
-module.exports = 'Hellow World1!';
+module.exports = 'Hello World!';
 
 
 /***/ })

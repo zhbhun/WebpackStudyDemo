@@ -1,0 +1,20 @@
+{
+  "name": "ExtractTextPlugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^2.1.0",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "css-loader": "^0.27.3",
+    "style-loader": "^0.14.0"
+  }
+}

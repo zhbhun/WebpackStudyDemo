@@ -2,5 +2,9 @@
 const webpack = require('webpack');
 
 webpack(require('./webpack.config.watch'), function (err, stats) {
-  console.log('builded');
+  if (err) {
+    console.log(err);
+    return;
+  }
+  console.log(stats.toString());
 });
