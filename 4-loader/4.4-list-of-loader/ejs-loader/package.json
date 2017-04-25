@@ -1,0 +1,17 @@
+{
+  "name": "ejs-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.confiig.js",
+  "dependencies": {},
+  "devDependencies": {
+    "ejs-loader": "^0.3.0",
+    "webpack": "^2.3.3"
+  },
+  "scripts": {
+    "test": "webpack --config ./webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

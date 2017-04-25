@@ -1,0 +1,16 @@
+{
+  "name": "webpack-html-plugin-custom-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack --config ./webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ejs-loader": "^0.3.0",
+    "html-webpack-plugin": "^2.21.0",
+    "webpack": "^1.13.1"
+  }
+}

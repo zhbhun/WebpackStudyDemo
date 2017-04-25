@@ -99,6 +99,7 @@ Webpack 开发成员，以及一些 Webpack 相关值得关注的人
 - [webpack使用优化（react篇）](https://github.com/lcxfs1991/blog/issues/7)
 - [React移动web极致优化](https://github.com/lcxfs1991/blog/issues/8)
 - [如何 10 倍提高你的 Webpack 构建效率](https://segmentfault.com/a/1190000005770042)
+- [webpack2 终极优化](http://imweb.io/topic/5868e1abb3ce6d8e3f9f99bb)
 
 ## 代码划分
 
