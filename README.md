@@ -1,4 +1,4 @@
-![webpack.png](./.attachment/webpack.png)
+![webpack.png](./.attachment/webpack-guide.png)
 
 # 目录
 
