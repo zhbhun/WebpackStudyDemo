@@ -39,6 +39,7 @@
 - [Webpack 官方文档](https://webpack.js.org/)
 - [Webpack 中文指南](http://zhaoda.net/webpack-handbook/)
 - [Webpack 发布声明](https://github.com/webpack/webpack/releases)
+- [Webpack 博客](https://medium.com/webpack)
 
 # 社区
 - [Gitter Chat](https://gitter.im/webpack/webpack)
