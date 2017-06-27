@@ -148,6 +148,7 @@ Webpack 开发成员，以及一些 Webpack 相关值得关注的人
 - [Webpack Fundamentals](https://pan.baidu.com/s/1nug9U9j#list/path=%2F)
 - Pete Hunt | OSCON 2014 - [How Instagram.com Works](https://www.youtube.com/watch?v=VkTCL6Nqm6Y&feature=youtu.be)
 - [Advanced Webpack](https://www.youtube.com/watch?v=MzVFrIAwwS8)
+- [在生产环境中使用 Webpack](https://egghead.io/courses/using-webpack-for-production-javascript-applications?)
 
 # 课程
 
