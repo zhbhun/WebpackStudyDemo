@@ -1,0 +1,2 @@
+- https://github.com/halt-hammerzeit/webpack-isomorphic-tools
+- https://hackernoon.com/developing-isomorphic-applications-using-webpack-eca814a418ad

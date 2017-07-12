@@ -1,0 +1,1 @@
+- [webpack-node-externals](https://github.com/liady/webpack-node-externals)
