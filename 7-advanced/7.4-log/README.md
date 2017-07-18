@@ -1,3 +1,8 @@
+- [webpack-dashboard](https://github.com/FormidableLabs/webpack-dashboard)
+- [friendly-errors-webpack-plugin](https://github.com/geowarin/friendly-errors-webpack-plugin)
+
+---
+
 目标
 
 - 开发环境
