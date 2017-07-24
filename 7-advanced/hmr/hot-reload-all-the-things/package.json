@@ -1,0 +1,22 @@
+{
+	"scripts": {
+		"start:server": "rm -rf ./build && webpack --config  webpack.config.server.js",
+		"start:client": "webpack-dev-server --config webpack.config.client.js",
+		"start": "rm -rf ./.build && npm-run-all --parallel start:server start:client"
+	},
+	"dependencies": {
+		"babel-core": "^6.23.1",
+		"babel-loader": "^6.3.2",
+		"babel-preset-env": "^1.1.10",
+		"babel-preset-react": "^6.23.0",
+		"express": "^4.14.1",
+		"npm-run-all": "^4.0.2",
+		"react": "^15.4.2",
+		"react-dom": "^15.4.2",
+		"react-hot-loader": "next",
+		"start-server-webpack-plugin": "^2.1.2",
+		"webpack": "^2.2.1",
+		"webpack-dev-server": "^2.4.1",
+		"webpack-node-externals": "^1.5.4"
+	}
+}

@@ -1,1 +1,2 @@
 - [webpack-node-externals](https://github.com/liady/webpack-node-externals)
+- https://github.com/mhaagens/hot-reload-all-the-things
