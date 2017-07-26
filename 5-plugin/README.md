@@ -1,5 +1,8 @@
 - NoErrorsPlugin
 
+# Resolver
+- [haste-resolver-webpack-plugin](https://github.com/yuanyan/haste-resolver-webpack-plugin)
+
 # 日志
 - ProgressPlugin
 - [friendly-errors-webpack-plugin](https://www.npmjs.com/package/friendly-errors-webpack-plugin)
