@@ -1,0 +1,4 @@
+- https://github.com/lodash/lodash-webpack-plugin
+- [Webpack按需打包Lodash的几种方式](https://imys.net/20161217/webpack-use-lodash.html)
+- http://www.xiaocaoge.com/lodash-shrinking.html
+- http://blog.sevenplus.me/2017/04/10/using-smaller-lodash/

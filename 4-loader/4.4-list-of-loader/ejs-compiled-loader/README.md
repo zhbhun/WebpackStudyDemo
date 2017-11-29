@@ -1,0 +1,2 @@
+- https://github.com/bazilio91/ejs-compiled-loader
+- https://github.com/rails/webpacker/issues/408

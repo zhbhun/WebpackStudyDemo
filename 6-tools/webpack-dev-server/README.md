@@ -273,6 +273,8 @@ module.exports = {
 - 为了连接webpacl-dev-server和它的runtime最好在webpack-dev-server命令后加上选项`--inline`
 
 # 常见问题
+- [webpack-dev-server 无法通过ip访问](https://segmentfault.com/q/1010000004135766)
+
 ## Webpack 变更
 - 默认开启 `--inline`
 - 增加命令行选项 `--hot-only`（等同于在程序入口添加 `webpack/hot/only-dev-server`）
