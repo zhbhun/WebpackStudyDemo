@@ -162,6 +162,7 @@ Webpack 开发成员，以及一些 Webpack 相关值得关注的人
 - [SurviveJS - Webpack and React: From apprentice to master](https://www.amazon.com/SurviveJS-Webpack-React-apprentice-master/dp/152391050X)
 - [Book of Modern frontend tooling](http://tooling.github.io/book-of-modern-frontend-tooling/)
 - [react-webpack-cookbook](https://fakefish.github.io/react-webpack-cookbook/)
+- [深入浅出 Webpack](http://webpack.wuhaolin.cn/)
 
 # 工具
 - [Webpack Dev Middleware](https://github.com/webpack/webpack-dev-middleware)
