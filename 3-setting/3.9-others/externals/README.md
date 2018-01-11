@@ -2,6 +2,7 @@
 - output.libraryTarget：表示构建的目标库模块以UMD规范来编写
 - externals：定义需要被处理的依赖模块，本例中只需要定义个add字符串，在构建后会将add模块通过CommonJS/AMMD/全局方式引入进来
 
+[webpack-node-externals](https://github.com/liady/webpack-node-externals)
 
 ---
 
