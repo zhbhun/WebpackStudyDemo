@@ -1,0 +1,2 @@
+require('./commonjs');
+require('./es');

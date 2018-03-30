@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "build:es6": "webpack --config ./es6/webpack.config.js",
+    "build:commonjs": "webpack --config ./commonjs/webpack.config.js",
+    "build:mixing": "webpack --config ./mixing/webpack.config.js"
+  },
+  "devDependencies": {
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
+  }
+}

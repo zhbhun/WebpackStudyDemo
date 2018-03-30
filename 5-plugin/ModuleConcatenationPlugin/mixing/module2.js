@@ -1,0 +1,3 @@
+import './es';
+
+require('./commonjs');
