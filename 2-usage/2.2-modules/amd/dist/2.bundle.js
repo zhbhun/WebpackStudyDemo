@@ -1,11 +1,11 @@
 webpackJsonp([2],{
 
-/***/ 15:
-/* unknown exports provided */
-/* all exports used */
+/***/ 12:
 /*!*****************************************************!*\
   !*** ./src/require-test/require-commonjs-module.js ***!
   \*****************************************************/
+/*! dynamic exports provided */
+/*! all exports used */
 /***/ (function(module, exports) {
 
 module.exports = 'require commonjs module';

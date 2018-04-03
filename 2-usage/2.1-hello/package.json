@@ -2,15 +2,16 @@
   "name": "2.1-hello",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
-    "build": "webpack app/index.js dist/bundle.js"
+    "build": "webpack app/index.js -o dist/bundle.js --mode development"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^2.2.1"
+    "webpack": "^4.3.0",
+    "webpack-cli": "^2.0.13"
   },
   "dependencies": {
     "lodash": "^4.17.4"

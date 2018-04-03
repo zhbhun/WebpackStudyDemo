@@ -1,3 +1,7 @@
+- [Modules](https://webpack.js.org/concepts/modules/)
+- [Module Methods](https://webpack.js.org/api/module-methods/)
+- [从 Bundle 文件看 Webpack 模块机制](https://zhuanlan.zhihu.com/p/25954788)
+- [JavaScript Module Systems Showdown: CommonJS vs AMD vs ES2015](https://auth0.com/blog/javascript-module-systems-showdown/)
 - [浅析JS中的模块规范（CommonJS，AMD，CMD）](http://www.cnblogs.com/skylar/p/4065455.html)
 - [使用 AMD、CommonJS 及 ES Harmony 编写模块化的 JavaScript](http://justineo.github.io/singles/writing-modular-js/)
 
