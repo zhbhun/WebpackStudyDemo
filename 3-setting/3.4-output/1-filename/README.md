@@ -1,3 +1,6 @@
+- [Webpack中hash与chunkhash的区别，以及js与css的hash指纹解耦方案](https://www.cnblogs.com/ihardcoder/p/5623411.html)
+- [Long-term caching of static assets with Webpack](https://codeburst.io/long-term-caching-of-static-assets-with-webpack-1ecb139adb95)
+
 # 示例
 ## 单入口命名
 测试生成一个打包文件时的命名方法
