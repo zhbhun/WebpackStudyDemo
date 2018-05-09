@@ -1,0 +1,2 @@
+- https://www.npmjs.com/package/webpack-partial
+- https://www.npmjs.com/package/webpack-config-composer
