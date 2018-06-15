@@ -61,6 +61,7 @@ Webpack 开发成员，以及一些 Webpack 相关值得关注的人
 # 教程
 - [LIST OF TUTORIALS](http://webpack.github.io/docs/list-of-tutorials.html)
 - [Webpack on Medium](https://medium.com/tag/webpack)
+- [webpack实战](https://segmentfault.com/a/1190000015020658)
 
 ## 入门
 - [Webpack是什么——Webpack入门指迷](http://segmentfault.com/a/1190000002551952#articleHeader0)
