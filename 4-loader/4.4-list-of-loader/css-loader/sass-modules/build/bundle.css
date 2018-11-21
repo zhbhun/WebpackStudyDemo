@@ -1,0 +1,21 @@
+.title {
+  color: green; }
+
+.Home-title-2BGka {
+  background-color: #0c77f8;
+  color: #ff0000; }
+
+.Home-paragraph-1MPhC {
+  background-color: #0c77f8;
+  color: #ff0000; }
+
+.Home-json-3Qg-h {
+  white-space: pre-wrap;
+  word-break: break-all; }
+
+@keyframes Home-bounce-2iDhL {
+  0% {
+    transform: translateY(100%); }
+  100% {
+    transform: translate(0%); } }
+

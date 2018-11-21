@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "json-format": "^1.0.1"
+  },
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "node-sass": "^4.9.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}

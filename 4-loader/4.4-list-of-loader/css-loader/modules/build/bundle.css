@@ -1,0 +1,36 @@
+
+
+.src-paragraph---paragraph---2OZYu {
+  background-color: blue;
+}
+
+.title {
+  color: #aaf200;
+}
+
+.src-index---baseTitle---AHB2h {
+  background-color: #0c77f8;
+}
+
+.src-index---title---lfEzW {
+  color: #ff0000;
+}
+
+.src-index---paragraph---xe-KX {
+  color: #ff0000;
+}
+
+.src-index---json---2vYnD {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+@keyframes src-index---bounce---1pX_N {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+

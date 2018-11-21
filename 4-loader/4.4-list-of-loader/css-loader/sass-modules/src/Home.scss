@@ -1,0 +1,35 @@
+@import "./colors.scss";
+@import "./paragraph.scss";
+
+:global(.title) {
+  color: green;
+}
+
+@mixin baseTitle() {
+  background-color: $blue;
+}
+
+
+.title {
+  @include baseTitle();
+  color: $red;
+}
+
+.paragraph {
+  @include paragraph();
+  color: $red;
+}
+
+.json {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
