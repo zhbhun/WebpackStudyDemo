@@ -2,38 +2,7 @@
 
 # 目录
 
-<!-- TOC -->
-
-- [目录](#%E7%9B%AE%E5%BD%95)
-- [文档](#%E6%96%87%E6%A1%A3)
-- [社区](#%E7%A4%BE%E5%8C%BA)
-- [人物](#%E4%BA%BA%E7%89%A9)
-- [教程](#%E6%95%99%E7%A8%8B)
-  - [入门](#%E5%85%A5%E9%97%A8)
-  - [对比](#%E5%AF%B9%E6%AF%94)
-  - [集成](#%E9%9B%86%E6%88%90)
-  - [优化](#%E4%BC%98%E5%8C%96)
-  - [代码划分](#%E4%BB%A3%E7%A0%81%E5%88%92%E5%88%86)
-  - [热加载](#%E7%83%AD%E5%8A%A0%E8%BD%BD)
-  - [架构](#%E6%9E%B6%E6%9E%84)
-  - [其他](#%E5%85%B6%E4%BB%96)
-- [视频](#%E8%A7%86%E9%A2%91)
-- [课程](#%E8%AF%BE%E7%A8%8B)
-- [书籍](#%E4%B9%A6%E7%B1%8D)
-- [工具](#%E5%B7%A5%E5%85%B7)
-- [示例](#%E7%A4%BA%E4%BE%8B)
-- [模板](#%E6%A8%A1%E6%9D%BF)
-  - [React](#react)
-  - [React Native](#react-native)
-  - [Angular](#angular)
-  - [Vue](#vue)
-  - [Others](#others)
-- [常见问题](#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
-- [源码分析](#%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90)
-- [Webpack2](#webpack2)
-- [参考](#%E5%8F%82%E8%80%83)
-
-<!-- /TOC -->
+<!-- TOC -->autoauto- [目录](#目录)auto- [文档](#文档)auto- [社区](#社区)auto- [人物](#人物)auto- [教程](#教程)auto  - [入门](#入门)auto  - [对比](#对比)auto  - [集成](#集成)auto  - [优化](#优化)auto  - [代码划分](#代码划分)auto  - [热加载](#热加载)auto  - [架构](#架构)auto  - [其他](#其他)auto- [视频](#视频)auto- [课程](#课程)auto- [书籍](#书籍)auto- [工具](#工具)auto- [示例](#示例)auto- [模板](#模板)auto  - [React](#react)auto  - [React Native](#react-native)auto  - [Angular](#angular)auto  - [Vue](#vue)auto  - [Others](#others)auto- [常见问题](#常见问题)auto- [源码分析](#源码分析)auto- [Webpack2](#webpack2)auto- [参考](#参考)autoauto<!-- /TOC -->
 
 # 文档
 - [Webpack 官方文档](https://webpack.js.org/)
@@ -62,6 +31,9 @@ Webpack 开发成员，以及一些 Webpack 相关值得关注的人
 - [LIST OF TUTORIALS](http://webpack.github.io/docs/list-of-tutorials.html)
 - [Webpack on Medium](https://medium.com/tag/webpack)
 - [webpack实战](https://segmentfault.com/a/1190000015020658)
+- [24 个实例入门并掌握「Webpack4」(一)](https://juejin.im/post/5cae0f616fb9a068a93f0613#heading-10)
+- [24 个实例入门并掌握「Webpack4」(二)](https://juejin.im/post/5cb01ab0e51d456e3428c0ca)
+- [24 个实例入门并掌握「Webpack4」(三)](https://juejin.im/post/5cb01f32e51d456e5e035ef7)
 
 ## 入门
 - [Webpack是什么——Webpack入门指迷](http://segmentfault.com/a/1190000002551952#articleHeader0)
