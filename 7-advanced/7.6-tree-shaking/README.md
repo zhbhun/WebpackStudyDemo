@@ -1,11 +1,45 @@
+# Tree Shaking
+
+
+## 介绍
+
+- [Dead code](https://en.wikipedia.org/wiki/Dead_code)
+- [Dead code elimination of Wikipedia](https://en.wikipedia.org/wiki/Dead_code_elimination)
+- [Dead Code Elimination of Compiler Optimizations](http://compileroptimizations.com/category/dead_code_elimination.htm)
+- [Dead Code Elimination Share](https://www.slideshare.net/samiul11/dead-code-elimination)
+- [Tree-shaking versus dead code elimination](https://medium.com/@Rich_Harris/tree-shaking-versus-dead-code-elimination-d3765df85c80#.1ndfj9dqd)
+- [Optimizing C++ Code : Dead Code Elimination](https://devblogs.microsoft.com/cppblog/optimizing-c-code-dead-code-elimination/)
+- [浅谈 ES 模块和 Webpack Tree-shaking](https://zhuanlan.zhihu.com/p/43844419)
+
+## 讨论
+
 - [如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术？](https://www.zhihu.com/question/41922432)
+- [Tree Shaking Issues of Github](https://github.com/webpack/webpack/search?p=1&q=tree+shaking&type=Issues&utf8=✓)
+
+## 教程
+
+- [Tree-shaking with webpack 2 and Babel 6](https://2ality.com/2015/12/webpack-tree-shaking.html)
 - [使用 Webpack 2 和 Babel 6 进行 Tree-shaking](http://zjy.name/archives/webpack-tree-shaking.html)
-- [tree-shaking-demo](https://github.com/rauschma/tree-shaking-demo)
-- [Tree-shaking with webpack 2 and Babel 6])http://www.2ality.com/2015/12/webpack-tree-shaking.html
 - [Webpack 2 Tree Shaking Configuration](https://medium.com/modus-create-front-end-development/webpack-2-tree-shaking-configuration-9f1de90f3233#.1se0q7hjr)
-- https://github.com/webpack/webpack/search?p=1&q=tree+shaking&type=Issues&utf8=%E2%9C%93
+- [tree-shaking不完全指南](https://zhuanlan.zhihu.com/p/33154109)
+- [Tree-Shaking性能优化实践 - 实践篇](https://zhuanlan.zhihu.com/p/32581195)
+- [Tree-Shaking性能优化实践 - 原理篇](https://zhuanlan.zhihu.com/p/32554436)
+- [你的Tree-Shaking并没什么卵用](https://zhuanlan.zhihu.com/p/32831172) / [你的Tree-Shaking并没什么卵用](https://juejin.im/post/5a5652d8f265da3e497ff3de)
+- [Tree Shaking in Webpack](https://zhuanlan.zhihu.com/p/41997654)
+- [webpack 4.0.0-alpha.3 新功能：JSON Tree Shaking](https://zhuanlan.zhihu.com/p/32691352)
 
+## 示例
 
+- [tree-shaking-demo](https://github.com/rauschma/tree-shaking-demo)
+
+## TODO
+
+### 代码压缩
+
+- [Closure Compiler](https://developers.google.com/closure/compiler)
+- [使用Google Closure Compiler高级压缩Javascript代码](https://segmentfault.com/a/1190000002575760)
+
+---
 
 uglifyjs
 
@@ -62,8 +96,5 @@ function(module, exports, __webpack_require__) {
 - [Webpack 4 tree shaking](https://wanago.io/2018/08/13/webpack-4-course-part-seven-decreasing-the-bundle-size-with-tree-shaking/)
 - [webpack-tree-shaking.md](https://github.com/FormidableLabs/formidable-playbook/blob/master/docs/frontend/webpack-tree-shaking.md)
 - [如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术？](https://www.zhihu.com/question/41922432)
-- [Tree-shaking versus dead code elimination](https://medium.com/@Rich_Harris/tree-shaking-versus-dead-code-elimination-d3765df85c80#.1ndfj9dqd)
-- [你的Tree-Shaking并没什么卵用](https://juejin.im/post/5a5652d8f265da3e497ff3de)
 - [浅析tree shaking工作原理](https://twindy.org/qian-xi-tree-shakinggong-zuo-yuan-li/)
 - [Webpack 中的 Tree shaking 机制学习](https://mmear.github.io/2019/04/15/Tree-shaking-in-Webpack/)
-- [Tree-Shaking性能优化实践 - 原理篇](https://zhuanlan.zhihu.com/p/32554436)
