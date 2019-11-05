@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "devDependencies": {
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "test:enable": "webpack --config ./webpack.config.enable.js",
+    "test:disable": "webpack --config ./webpack.config.disable.js",
+    "test:prod": "webpack --config ./webpack.config.prod.js"
+  }
+}
