@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "init": "^0.1.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^4.0.0-beta.11"
+  },
+  "scripts": {
+    "test": "rm -r dist && node build.js",
+    "debug": "rm -r dist && node --inspect-brk=192.168.122.137:9229 build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
