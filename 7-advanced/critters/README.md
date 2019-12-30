@@ -8,3 +8,7 @@
 - [nrwl/webpack-plugin-critical](https://github.com/nrwl/webpack-plugin-critical) - Webpack wrapper for @addyosmani's critical library.
 - [anthonygore/html-critical-webpack-plugin](https://github.com/anthonygore/html-critical-webpack-plugin) - A webpack plugin that will extract critical CSS. Now supports Webpack v4.
 - [stereobooster/react-snap](https://github.com/stereobooster/react-snap) - Zero-configuration framework-agnostic static prerendering for SPAs.
+
+## 示例
+
+- [critical-path-css-demo](https://github.com/addyosmani/critical-path-css-demo)
