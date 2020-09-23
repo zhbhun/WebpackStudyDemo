@@ -5,7 +5,7 @@
 <!-- TOC -->autoauto- [目录](#目录)auto- [文档](#文档)auto- [社区](#社区)auto- [人物](#人物)auto- [教程](#教程)auto  - [入门](#入门)auto  - [对比](#对比)auto  - [集成](#集成)auto  - [优化](#优化)auto  - [代码划分](#代码划分)auto  - [热加载](#热加载)auto  - [架构](#架构)auto  - [其他](#其他)auto- [视频](#视频)auto- [课程](#课程)auto- [书籍](#书籍)auto- [工具](#工具)auto- [示例](#示例)auto- [模板](#模板)auto  - [React](#react)auto  - [React Native](#react-native)auto  - [Angular](#angular)auto  - [Vue](#vue)auto  - [Others](#others)auto- [常见问题](#常见问题)auto- [源码分析](#源码分析)auto- [Webpack2](#webpack2)auto- [参考](#参考)autoauto<!-- /TOC -->
 
 # 文档
-- [Webpack 官方文档](https://webpack.js.org/)
+- [Webpack 官方文档](https://webpack.js.org/) / https://www.webpackjs.com/
 - [Webpack 中文指南](http://zhaoda.net/webpack-handbook/)
 - [Webpack 发布声明](https://github.com/webpack/webpack/releases)
 - [Webpack 博客](https://medium.com/webpack)
