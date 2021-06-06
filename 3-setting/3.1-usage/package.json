@@ -4,7 +4,7 @@
   "description": "- `webpack --help`：webpack 命令用法 - [CLI](http://webpack.github.io/docs/cli.html)：webpack 命令行文档 - [NODE.JS API](http://webpack.github.io/docs/node.js-api.html)：webpack api 文档",
   "main": "index.js",
   "dependencies": {
-    "jquery": "^3.1.1"
+    "jquery": "^3.5.0"
   },
   "devDependencies": {
     "webpack": "^2.2.1"
