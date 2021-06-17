@@ -28,3 +28,4 @@
 
 - [带你深度解锁Webpack系列(优化篇)](https://juejin.cn/post/6844904093463347208)
 - [Build Performance](https://webpack.js.org/guides/build-performance/)
+- [深度分析前端构建工具：Vite2 v.s Snowpack3 v.s. Webpack5](https://segmentfault.com/a/1190000039370642)
