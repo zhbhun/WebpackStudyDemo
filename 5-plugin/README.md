@@ -176,14 +176,12 @@ module.exports = {
 };
 ```
 
-### Tapable 工作原理
+### 注册钩子函数
 
 Tapable 是 Webpack 插件架构的核心支架，但它的源码量其实很少，本质上就是围绕着 订阅/发布 模式叠加各种特化逻辑，适配 webpack 体系下复杂的事件源-处理器之间交互需求，比如说有些场景需要支持将前一个处理器的结果传入下一个回调处理器；有些场景需要支持异步并行调用这些回调处理器。
 
 - https://webpack.js.org/api/plugins/
 - [[源码解读] Webpack 插件架构深度讲解](https://mp.weixin.qq.com/s/tXkGx6Ckt9ucT2o8tNM-8w)
-
-### 注册钩子函数
 
 插件操作构建可能是同步或者异步的，相应的需要调用不同的函数进行注册
 
