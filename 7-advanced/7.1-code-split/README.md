@@ -153,7 +153,7 @@ ps：由于覆盖了 defaultVendors 的配置，导致异步包的第三方库�
       name: `initial-vendors`,
       test: /[\\/]node_modules[\\/]/,
       priority: -10,
-      chunks: 'initial'
+      chunks: 'initial' // 这里不能改为 all，否则会将异步动态包里的公共库也合并进来，导致初始化请求文件过大（而且还用不到）
     },
     initialCommon: {
       name: `initial-common`,

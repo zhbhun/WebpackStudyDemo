@@ -8,7 +8,8 @@
     "build:initial-split": "webpack --config ./initial-split/webpack.config.js",
     "build:mpa-default": "webpack --config ./mpa-default/webpack.config.js",
     "build:async-css": "webpack --config ./async-css/webpack.config.js",
-    "build:async-css-split": "webpack --config ./async-css-split/webpack.config.js"
+    "build:async-css-split": "webpack --config ./async-css-split/webpack.config.js",
+    "build:all-split": "webpack --config ./all-split/webpack.config.js"
   },
   "devDependencies": {
     "css-loader": "^6.7.3",
