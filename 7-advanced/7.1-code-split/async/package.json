@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "rimraf dist && webpack"
+  },
+  "dependencies": {
+    "jquery": "^3.6.3",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
